@@ -6,10 +6,6 @@ Project uses Nvidia RIVA with pretrained models for a full pipeline from ASR, NL
 
 I wanted to build an voice assistant to see if it could retrieve information from a database easily. I thought there was not many good solutions that provided a lot of the tooling that could be done out-of-the-box without doing a lot of configuration and experimentation.
 
-
-
-
-
 ### Links for RIVA
 - https://www.nvidia.com/en-us/ai-data-science/products/riva/
 - https://docs.nvidia.com/deeplearning/riva/user-guide/docs/quick-start-guide.html
@@ -17,3 +13,4 @@ I wanted to build an voice assistant to see if it could retrieve information fro
 - https://docs.nvidia.com/deeplearning/riva/user-guide/docs/model-overview.html
 - https://docs.nvidia.com/deeplearning/riva/user-guide/docs/installation/deploy-local.html#local-docker
 - https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html
+- https://docs.nvidia.com/deeplearning/riva/user-guide/docs/support-matrix/support-matrix-older-versions.html#riva-2-17-0

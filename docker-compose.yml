@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  riva-speech:
+    image: nvcr.io/nvidia/riva/riva-speech:2.19.0
+    container_name: riva-speech
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - RIVA_MODEL_LOCATIONS=/data/models
+    volumes:
+      - ./models:/data/models
+    ports:
+      - "50051:50051"  # gRPC
+      - "8000:8000"    # HTTP
+    command: >
+      bash -c "
+        echo 'Starting RIVA server with pre-downloaded models...' &&
+        riva_start.sh
+      "

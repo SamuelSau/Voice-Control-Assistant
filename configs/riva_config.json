@@ -1,0 +1,21 @@
+{
+  "riva_config": {
+    "version": "1.0",
+    "services": {
+      "asr": {
+        "enable": true
+      },
+      "nlp": {
+        "enable": true
+      },
+      "tts": {
+        "enable": true
+      }
+    },
+    "models": {
+      "asr": ["riva_asr_en_us_conformer_large"],
+      "nlp": ["riva_intent_slot_bert"]
+    },
+    "model_dir": "/data/models"
+  }
+}
