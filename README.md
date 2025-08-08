@@ -15,5 +15,6 @@ I wanted to build an voice assistant to see if it could retrieve information fro
 - https://docs.nvidia.com/deeplearning/riva/user-guide/docs/asr/asr-overview.html
 - https://docs.nvidia.com/deeplearning/riva/user-guide/docs/support-matrix/support-matrix-older-versions.html#riva-2-17-0
 - https://arizsiddiqui.medium.com/building-powerful-conversational-ai-models-with-nvidia-nemo-ce63243284d2
+- https://github.com/nvidia-riva/tutorials?tab=readme-ov-file#running-the-riva-client
 
 ### Links for the NGC models used
