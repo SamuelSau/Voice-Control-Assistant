@@ -26,8 +26,8 @@ def transcribe_audio_with_asr(path: str):
     # Set up an offline/batch recognition request
     config = riva.client.RecognitionConfig()
     config.encoding = AUDIO_ENCODINGS # Audio encoding can be detected from wav
-    config.sample_rate_hertz = SAMPLE_RATE_HERTZ                  # Sample rate can be detected from wav and resampled if needed
-    config.language_code = LANGUAGE_CODE                    # Language code of the audio clip
+    config.sample_rate_hertz = SAMPLE_RATE_HERTZ      # Sample rate can be detected from wav and resampled if needed
+    config.language_code = LANGUAGE_CODE              # Language code of the audio clip
     config.max_alternatives = 1                       # How many top-N hypotheses to return
     config.enable_automatic_punctuation = True        # Add punctuation when end of VAD detected
     config.audio_channel_count = 1                    # Mono channel
@@ -40,10 +40,11 @@ def transcribe_audio_with_asr(path: str):
     return asr_best_transcript, response
 
 def save_tts_audio_as_wav(audio_bytes, filename):
+    sample_rate = 48000
     with wave.open(filename, 'wb') as wf:
         wf.setnchannels(1)          # Mono channel
         wf.setsampwidth(2)          # 16-bit audio (2 bytes per sample)
-        wf.setframerate(SAMPLE_RATE_HERTZ) # Sample rate (Hz)
+        wf.setframerate(sample_rate) # Sample rate (Hz)
         wf.writeframes(audio_bytes)
     print(f"Saved synthesized speech to {filename}")
 
