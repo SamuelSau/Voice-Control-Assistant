@@ -1,0 +1,1 @@
+scripts/intent_slot_classification.py +HYDRA_FULL_ERROR=1

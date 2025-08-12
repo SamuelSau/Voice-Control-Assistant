@@ -1,0 +1,27 @@
+-- Table for intents
+CREATE TABLE intents (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    intent_name TEXT NOT NULL UNIQUE,
+    description TEXT
+);
+
+-- Table for slots (entities)
+CREATE TABLE slots (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    intent_id INTEGER,
+    slot_name TEXT NOT NULL,
+    slot_value TEXT,
+    FOREIGN KEY (intent_id) REFERENCES intents(id)
+);
+
+-- Sample data for intents
+INSERT INTO intents (intent_name, description) VALUES
+('GetWeather', 'Get weather information for a location'),
+('SetReminder', 'Set a reminder for a user'),
+('QueryContainer', 'Query information about containers X, Y, and Z');
+
+-- Sample data for slots for QueryContainer intent
+INSERT INTO slots (intent_id, slot_name, slot_value) VALUES
+((SELECT id FROM intents WHERE intent_name = 'QueryContainer'), 'container_name', 'X'),
+((SELECT id FROM intents WHERE intent_name = 'QueryContainer'), 'container_name', 'Y'),
+((SELECT id FROM intents WHERE intent_name = 'QueryContainer'), 'container_name', 'Z');

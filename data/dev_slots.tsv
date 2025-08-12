@@ -1,0 +1,5 @@
+text	intent	slot_tags
+Do container A and B exist?	check_container	O O B-container I-container O O
+Is container C active?	check_container	O B-container O O
+Find all the containers in warehouse 7	list_containers	O O O O B-location O
+Check if container X is empty	check_container	O O B-container O O

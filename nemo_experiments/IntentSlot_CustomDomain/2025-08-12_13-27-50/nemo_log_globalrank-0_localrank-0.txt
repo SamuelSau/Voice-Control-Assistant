@@ -1,0 +1,312 @@
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification:16] Config Params:
+     trainer:
+      devices: 1
+      num_nodes: 1
+      max_epochs: 20
+      max_steps: -1
+      accumulate_grad_batches: 1
+      precision: 16
+      accelerator: gpu
+      strategy: ddp_find_unused_parameters_true
+      log_every_n_steps: 1
+      val_check_interval: 1.0
+      enable_checkpointing: true
+      logger: false
+    model:
+      nemo_path: ./intent_slot_model.nemo
+      data_dir: ./data
+      class_labels:
+        intent_labels_file: ./data/dict.intents.csv
+        slot_labels_file: ./data/dict.slots.csv
+      class_balancing: {}
+      intent_loss_weight: 0.6
+      pad_label: -1
+      ignore_extra_tokens: false
+      ignore_start_end: true
+      train_ds:
+        prefix: train
+        batch_size: 16
+        shuffle: true
+        num_samples: -1
+        num_workers: 4
+        drop_last: false
+        pin_memory: true
+      validation_ds:
+        prefix: val
+        batch_size: 16
+        shuffle: false
+        num_samples: -1
+        num_workers: 4
+        drop_last: false
+        pin_memory: true
+      test_ds:
+        prefix: test
+        batch_size: 16
+        shuffle: false
+        num_samples: -1
+        num_workers: 4
+        drop_last: false
+        pin_memory: true
+      tokenizer:
+        tokenizer_name: distilbert-base-uncased
+        vocab_file: ../models/nlp/tokenizer.vocab_file
+        tokenizer_model: null
+        special_tokens: null
+      language_model:
+        max_seq_length: 64
+        pretrained_model_name: distilbert-base-uncased
+        lm_checkpoint: null
+        config_file: ../models/nlp/distilbert-base-uncased_encoder_config.json
+        config: null
+      head:
+        num_output_layers: 1
+        fc_dropout: 0.1
+      optim:
+        name: adam
+        lr: 2.0e-05
+        args:
+          name: auto
+          params:
+            weight_decay: 0.01
+        sched:
+          name: WarmupAnnealing
+          iters_per_batch: null
+          max_steps: -1
+          monitor: val_loss
+          reduce_on_plateau: false
+          args:
+            name: auto
+            params:
+              warmup_steps: null
+              warmup_ratio: 0.1
+              last_epoch: -1
+    exp_manager:
+      exp_dir: ./nemo_experiments
+      name: IntentSlot_CustomDomain
+      create_tensorboard_logger: true
+      create_checkpoint_callback: false
+    
+[NeMo I 2025-08-12 13:27:50 exp_manager:566] ExpManager schema
+[NeMo I 2025-08-12 13:27:50 exp_manager:567] {'explicit_log_dir': None, 'exp_dir': None, 'name': None, 'version': None, 'use_datetime_version': True, 'resume_if_exists': False, 'resume_past_end': False, 'resume_ignore_no_checkpoint': False, 'resume_from_checkpoint': None, 'create_tensorboard_logger': True, 'summary_writer_kwargs': None, 'create_wandb_logger': False, 'wandb_logger_kwargs': None, 'create_mlflow_logger': False, 'mlflow_logger_kwargs': {'experiment_name': None, 'run_name': None, 'tracking_uri': None, 'tags': None, 'save_dir': './mlruns', 'prefix': '', 'artifact_location': None, 'run_id': None, 'log_model': False}, 'create_dllogger_logger': False, 'dllogger_logger_kwargs': {'verbose': False, 'stdout': False, 'json_file': './dllogger.json'}, 'create_clearml_logger': False, 'clearml_logger_kwargs': {'project': None, 'task': None, 'connect_pytorch': False, 'model_name': None, 'tags': None, 'log_model': False, 'log_cfg': False, 'log_metrics': False}, 'create_neptune_logger': False, 'neptune_logger_kwargs': None, 'create_checkpoint_callback': True, 'checkpoint_callback_params': {'filepath': None, 'dirpath': None, 'filename': None, 'monitor': 'val_loss', 'verbose': True, 'save_last': True, 'save_top_k': 3, 'save_weights_only': False, 'mode': 'min', 'auto_insert_metric_name': True, 'every_n_epochs': 1, 'every_n_train_steps': None, 'train_time_interval': None, 'prefix': None, 'postfix': '.nemo', 'save_best_model': False, 'always_save_nemo': False, 'save_nemo_on_train_end': True, 'model_parallel_size': None, 'save_on_train_epoch_end': False, 'async_save': False, 'save_last_n_optim_states': -1}, 'create_early_stopping_callback': False, 'early_stopping_callback_params': {'monitor': 'val_loss', 'mode': 'min', 'min_delta': 0.001, 'patience': 10, 'verbose': True, 'strict': True, 'check_finite': True, 'stopping_threshold': None, 'divergence_threshold': None, 'check_on_train_epoch_end': None, 'log_rank_zero_only': False}, 'create_preemption_callback': True, 'files_to_copy': None, 'log_step_timing': True, 'log_delta_step_timing': False, 'step_timing_kwargs': {'reduction': 'mean', 'sync_cuda': False, 'buffer_size': 1}, 'log_local_rank_0_only': False, 'log_global_rank_0_only': False, 'disable_validation_on_resume': True, 'ema': {'enable': False, 'decay': 0.999, 'cpu_offload': False, 'validate_original_weights': False, 'every_n_steps': 1}, 'max_time_per_run': None, 'seconds_to_sleep': 5.0, 'create_straggler_detection_callback': False, 'straggler_detection_params': {'report_time_interval': 300.0, 'calc_relative_gpu_perf': True, 'calc_individual_gpu_perf': True, 'num_gpu_perf_scores_to_log': 5, 'gpu_relative_perf_threshold': 0.7, 'gpu_individual_perf_threshold': 0.7, 'stop_if_detected': False}, 'create_fault_tolerance_callback': False, 'fault_tolerance': {'workload_check_interval': 5.0, 'initial_rank_heartbeat_timeout': 3600.0, 'rank_heartbeat_timeout': 2700.0, 'calculate_timeouts': True, 'safety_factor': 5.0, 'rank_termination_signal': <Signals.SIGKILL: 9>, 'log_level': 'INFO', 'max_rank_restarts': 0, 'max_subsequent_job_failures': 0, 'additional_ft_launcher_args': '', 'simulated_fault': None}, 'log_tflops_per_sec_per_gpu': True}
+[NeMo I 2025-08-12 13:27:50 exp_manager:627] Experiments will be logged at nemo_experiments/IntentSlot_CustomDomain/2025-08-12_13-27-50
+[NeMo I 2025-08-12 13:27:50 exp_manager:1230] TensorboardLogger has been set up
+[NeMo I 2025-08-12 13:27:50 exp_manager:772] TFLOPs per sec per GPU will be calculated, conditioned on supported models. Defaults to -1 upon failure.
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:87]  Stats calculating for train mode...
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:112] Three most popular intents in train mode:
+[NeMo I 2025-08-12 13:27:50 data_preprocessing:194] label: 0, 2 out of 15 (13.33%).
+[NeMo I 2025-08-12 13:27:50 data_preprocessing:194] label: 9, 2 out of 15 (13.33%).
+[NeMo I 2025-08-12 13:27:50 data_preprocessing:194] label: 1, 1 out of 15 (6.67%).
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:118] Three most popular slots in train mode:
+[NeMo I 2025-08-12 13:27:50 data_preprocessing:194] label: 14, 69 out of 86 (80.23%).
+[NeMo I 2025-08-12 13:27:50 data_preprocessing:194] label: 2, 6 out of 86 (6.98%).
+[NeMo I 2025-08-12 13:27:50 data_preprocessing:194] label: 0, 2 out of 86 (2.33%).
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:121] Total Number of Intents: 15
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:122] Intent Label Frequencies: {0: 2, 9: 2, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 10: 1, 11: 1, 12: 1}
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:123] Total Number of Slots: 86
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:124] Slots Label Frequencies: {14: 69, 2: 6, 0: 2, 10: 2, 12: 2, 1: 1, 4: 1, 6: 1, 8: 1, 13: 1}
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:128] Intent Weights: {0: 0.5769230769230769, 9: 0.5769230769230769, 1: 1.1538461538461537, 2: 1.1538461538461537, 3: 1.1538461538461537, 4: 1.1538461538461537, 5: 1.1538461538461537, 6: 1.1538461538461537, 7: 1.1538461538461537, 8: 1.1538461538461537, 10: 1.1538461538461537, 11: 1.1538461538461537, 12: 1.1538461538461537}
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:130] Slot Weights: {14: 0.1246376811594203, 2: 1.4333333333333333, 0: 4.3, 10: 4.3, 12: 4.3, 1: 8.6, 4: 8.6, 6: 8.6, 8: 8.6, 13: 8.6}
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:87]  Stats calculating for val mode...
+[NeMo I 2025-08-12 13:27:50 intent_slot_classification_descriptor:112] Three most popular intents in val mode:
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:194] label: 2, 1 out of 5 (20.00%).
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:194] label: 7, 1 out of 5 (20.00%).
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:194] label: 13, 1 out of 5 (20.00%).
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_descriptor:118] Three most popular slots in val mode:
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:194] label: 14, 17 out of 23 (73.91%).
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:194] label: 6, 2 out of 23 (8.70%).
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:194] label: 2, 1 out of 23 (4.35%).
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_descriptor:121] Total Number of Intents: 5
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_descriptor:122] Intent Label Frequencies: {2: 1, 7: 1, 13: 1, 11: 1, 14: 1}
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_descriptor:123] Total Number of Slots: 23
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_descriptor:124] Slots Label Frequencies: {14: 17, 6: 2, 2: 1, 10: 1, 12: 1, 4: 1}
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_model:115] Labels: {'B-date': 0, 'I-date': 1, 'B-container_name': 2, 'I-container_name': 3, 'B-location': 4, 'I-location': 5, 'B-equipment_type': 6, 'I-equipment_type': 7, 'B-equipment_id': 8, 'I-equipment_id': 9, 'B-ship_name': 10, 'I-ship_name': 11, 'B-cargo_type': 12, 'I-cargo_type': 13, 'O': 14}
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_model:116] Labels mapping saved to : ./data/dict.slots.csv
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_model:115] Labels: {'book_container': 0, 'cancel_container': 1, 'check_container': 2, 'list_containers': 3, 'check_container_status': 4, 'list_containers_by_location': 5, 'schedule_maintenance': 6, 'query_ship_schedule': 7, 'query_ship_location': 8, 'update_container_destination': 9, 'check_equipment_status': 10, 'book_shipment': 11, 'cancel_shipment': 12, 'cancel_equipment': 13, 'list_equipment_by_location': 14}
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_model:116] Labels mapping saved to : ./data/dict.intents.csv
+[NeMo W 2025-08-12 13:27:51 save_restore_connector:430] src path does not exist or it is not a path in nemo file. src value I got was: ../models/nlp/tokenizer.vocab_file. Absolute: /mnt/c/Users/Sammy/GitHubProjects/models/nlp/tokenizer.vocab_file
+[NeMo I 2025-08-12 13:27:51 tokenizer_utils:147] Getting HuggingFace AutoTokenizer with pretrained_model_name: distilbert-base-uncased, vocab_file: None,  merges_files: None, special_tokens_dict: {}, and use_fast: False
+[NeMo W 2025-08-12 13:27:51 modelPT:291] You tried to register an artifact under config key=tokenizer.vocab_file but an artifact for it has already been registered.
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_dataset:92] Setting max length to: 10
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:404] Some stats of the lengths of the sequences:
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:406] Min: 6 |                  Max: 10 |                  Mean: 7.733333333333333 |                  Median: 8.0
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:412] 75 percentile: 8.50
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:413] 99 percentile: 9.86
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_dataset:121] 0 are longer than 10
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_dataset:92] Setting max length to: 8
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:404] Some stats of the lengths of the sequences:
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:406] Min: 6 |                  Max: 8 |                  Mean: 6.6 |                  Median: 6.0
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:412] 75 percentile: 7.00
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:413] 99 percentile: 7.96
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_dataset:121] 0 are longer than 8
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_dataset:92] Setting max length to: 12
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:404] Some stats of the lengths of the sequences:
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:406] Min: 6 |                  Max: 12 |                  Mean: 8.5 |                  Median: 8.0
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:412] 75 percentile: 9.75
+[NeMo I 2025-08-12 13:27:51 data_preprocessing:413] 99 percentile: 11.91
+[NeMo I 2025-08-12 13:27:51 intent_slot_classification_dataset:121] 0 are longer than 12
+[NeMo W 2025-08-12 13:27:51 nlp_overrides:1048] Apex was not found. Please see the NeMo README for installation instructions: https://github.com/NVIDIA/apex
+    Megatron-based models require Apex to function correctly.
+[NeMo W 2025-08-12 13:27:51 save_restore_connector:430] src path does not exist or it is not a path in nemo file. src value I got was: ../models/nlp/distilbert-base-uncased_encoder_config.json. Absolute: /mnt/c/Users/Sammy/GitHubProjects/models/nlp/distilbert-base-uncased_encoder_config.json
+[NeMo I 2025-08-12 13:27:57 intent_slot_classification:24] ================================================================================================
+[NeMo I 2025-08-12 13:27:57 intent_slot_classification:25] Starting training...
+[NeMo I 2025-08-12 13:27:58 modelPT:813] Optimizer config = Adam (
+    Parameter Group 0
+        amsgrad: False
+        betas: (0.9, 0.999)
+        capturable: False
+        decoupled_weight_decay: False
+        differentiable: False
+        eps: 1e-08
+        foreach: None
+        fused: None
+        lr: 2e-05
+        maximize: False
+        weight_decay: 0.01
+    )
+[NeMo W 2025-08-12 13:27:58 lr_scheduler:865] `max_steps` is set to -1 in the scheduler config, scheduler will not be instantiated
+[NeMo I 2025-08-12 13:27:59 intent_slot_classification_model:273] Intent report: 
+    label                                                precision    recall       f1           support   
+    book_container (label_id: 0)                             0.00       0.00       0.00          0
+    cancel_container (label_id: 1)                           0.00       0.00       0.00          0
+    check_container (label_id: 2)                            0.00       0.00       0.00          1
+    list_containers (label_id: 3)                            0.00       0.00       0.00          0
+    check_container_status (label_id: 4)                     0.00       0.00       0.00          0
+    list_containers_by_location (label_id: 5)                0.00       0.00       0.00          0
+    schedule_maintenance (label_id: 6)                       0.00       0.00       0.00          0
+    query_ship_schedule (label_id: 7)                        0.00       0.00       0.00          1
+    query_ship_location (label_id: 8)                        0.00       0.00       0.00          0
+    update_container_destination (label_id: 9)               0.00       0.00       0.00          0
+    check_equipment_status (label_id: 10)                    0.00       0.00       0.00          0
+    book_shipment (label_id: 11)                             0.00       0.00       0.00          1
+    cancel_shipment (label_id: 12)                           0.00       0.00       0.00          0
+    cancel_equipment (label_id: 13)                          0.00       0.00       0.00          1
+    list_equipment_by_location (label_id: 14)                0.00       0.00       0.00          1
+    -------------------
+    micro avg                                                0.00       0.00       0.00          5
+    macro avg                                                0.00       0.00       0.00          5
+    weighted avg                                             0.00       0.00       0.00          5
+    
+[NeMo I 2025-08-12 13:27:59 intent_slot_classification_model:276] Slot report: 
+    label                                                precision    recall       f1           support   
+    B-date (label_id: 0)                                     0.00       0.00       0.00          0
+    I-date (label_id: 1)                                     0.00       0.00       0.00          0
+    B-container_name (label_id: 2)                           0.00       0.00       0.00          1
+    I-container_name (label_id: 3)                           0.00       0.00       0.00          0
+    B-location (label_id: 4)                                 0.00       0.00       0.00          1
+    I-location (label_id: 5)                                 0.00       0.00       0.00          0
+    B-equipment_type (label_id: 6)                           0.00       0.00       0.00          2
+    I-equipment_type (label_id: 7)                           0.00       0.00       0.00          0
+    B-equipment_id (label_id: 8)                             0.00       0.00       0.00          0
+    I-equipment_id (label_id: 9)                             0.00       0.00       0.00          0
+    B-ship_name (label_id: 10)                               0.00       0.00       0.00          1
+    I-ship_name (label_id: 11)                               0.00       0.00       0.00          0
+    B-cargo_type (label_id: 12)                              0.00       0.00       0.00          1
+    I-cargo_type (label_id: 13)                              0.00       0.00       0.00          0
+    O (label_id: 14)                                         0.00       0.00       0.00         17
+    -------------------
+    micro avg                                                0.00       0.00       0.00         23
+    macro avg                                                0.00       0.00       0.00         23
+    weighted avg                                             0.00       0.00       0.00         23
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('val_loss', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('intent_precision', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('intent_recall', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('intent_f1', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('slot_precision', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('slot_recall', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo W 2025-08-12 13:27:59 nemo_logging:361] /home/sammy/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/connectors/logger_connector/result.py:431: It is recommended to use `self.log('slot_f1', ..., sync_dist=True)` when logging on epoch level in distributed setting to accumulate the metric across devices.
+    
+[NeMo I 2025-08-12 13:27:59 intent_slot_classification_model:273] Intent report: 
+    label                                                precision    recall       f1           support   
+    book_container (label_id: 0)                             0.00       0.00       0.00          0
+    cancel_container (label_id: 1)                           0.00       0.00       0.00          0
+    check_container (label_id: 2)                            0.00       0.00       0.00          1
+    list_containers (label_id: 3)                            0.00       0.00       0.00          0
+    check_container_status (label_id: 4)                     0.00       0.00       0.00          0
+    list_containers_by_location (label_id: 5)                0.00       0.00       0.00          0
+    schedule_maintenance (label_id: 6)                       0.00       0.00       0.00          0
+    query_ship_schedule (label_id: 7)                        0.00       0.00       0.00          1
+    query_ship_location (label_id: 8)                        0.00       0.00       0.00          0
+    update_container_destination (label_id: 9)               0.00       0.00       0.00          0
+    check_equipment_status (label_id: 10)                    0.00       0.00       0.00          0
+    book_shipment (label_id: 11)                             0.00       0.00       0.00          1
+    cancel_shipment (label_id: 12)                           0.00       0.00       0.00          0
+    cancel_equipment (label_id: 13)                          0.00       0.00       0.00          1
+    list_equipment_by_location (label_id: 14)                0.00       0.00       0.00          1
+    -------------------
+    micro avg                                                0.00       0.00       0.00          5
+    macro avg                                                0.00       0.00       0.00          5
+    weighted avg                                             0.00       0.00       0.00          5
+    
+[NeMo I 2025-08-12 13:27:59 intent_slot_classification_model:276] Slot report: 
+    label                                                precision    recall       f1           support   
+    B-date (label_id: 0)                                     0.00       0.00       0.00          0
+    I-date (label_id: 1)                                     0.00       0.00       0.00          0
+    B-container_name (label_id: 2)                           0.00       0.00       0.00          1
+    I-container_name (label_id: 3)                           0.00       0.00       0.00          0
+    B-location (label_id: 4)                                 0.00       0.00       0.00          1
+    I-location (label_id: 5)                                 0.00       0.00       0.00          0
+    B-equipment_type (label_id: 6)                           0.00       0.00       0.00          2
+    I-equipment_type (label_id: 7)                           0.00       0.00       0.00          0
+    B-equipment_id (label_id: 8)                             0.00       0.00       0.00          0
+    I-equipment_id (label_id: 9)                             0.00       0.00       0.00          0
+    B-ship_name (label_id: 10)                               0.00       0.00       0.00          1
+    I-ship_name (label_id: 11)                               0.00       0.00       0.00          0
+    B-cargo_type (label_id: 12)                              0.00       0.00       0.00          1
+    I-cargo_type (label_id: 13)                              0.00       0.00       0.00          0
+    O (label_id: 14)                                         0.00       0.00       0.00         17
+    -------------------
+    micro avg                                                0.00       0.00       0.00         23
+    macro avg                                                0.00       0.00       0.00         23
+    weighted avg                                             0.00       0.00       0.00         23
+    
+[NeMo I 2025-08-12 13:28:02 intent_slot_classification_model:273] Intent report: 
+    label                                                precision    recall       f1           support   
+    book_container (label_id: 0)                             0.00       0.00       0.00          0
+    cancel_container (label_id: 1)                           0.00       0.00       0.00          0
+    check_container (label_id: 2)                            0.00       0.00       0.00          1
+    list_containers (label_id: 3)                            0.00       0.00       0.00          0
+    check_container_status (label_id: 4)                     0.00       0.00       0.00          0
+    list_containers_by_location (label_id: 5)                0.00       0.00       0.00          0
+    schedule_maintenance (label_id: 6)                       0.00       0.00       0.00          0
+    query_ship_schedule (label_id: 7)                        0.00       0.00       0.00          1
+    query_ship_location (label_id: 8)                        0.00       0.00       0.00          0
+    update_container_destination (label_id: 9)               0.00       0.00       0.00          0
+    check_equipment_status (label_id: 10)                    0.00       0.00       0.00          0
+    book_shipment (label_id: 11)                             0.00       0.00       0.00          1
+    cancel_shipment (label_id: 12)                           0.00       0.00       0.00          0
+    cancel_equipment (label_id: 13)                          0.00       0.00       0.00          1
+    list_equipment_by_location (label_id: 14)                0.00       0.00       0.00          1
+    -------------------
+    micro avg                                                0.00       0.00       0.00          5
+    macro avg                                                0.00       0.00       0.00          5
+    weighted avg                                             0.00       0.00       0.00          5
+    
+[NeMo I 2025-08-12 13:28:02 intent_slot_classification_model:276] Slot report: 
+    label                                                precision    recall       f1           support   
+    B-date (label_id: 0)                                     0.00       0.00       0.00          0
+    I-date (label_id: 1)                                     0.00       0.00       0.00          0
+    B-container_name (label_id: 2)                           0.00       0.00       0.00          1
+    I-container_name (label_id: 3)                           0.00       0.00       0.00          0
+    B-location (label_id: 4)                                 0.00       0.00       0.00          1
+    I-location (label_id: 5)                                 0.00       0.00       0.00          0
+    B-equipment_type (label_id: 6)                           0.00       0.00       0.00          2
+    I-equipment_type (label_id: 7)                           0.00       0.00       0.00          0
+    B-equipment_id (label_id: 8)                             0.00       0.00       0.00          0
+    I-equipment_id (label_id: 9)                             0.00       0.00       0.00          0
+    B-ship_name (label_id: 10)                               0.00       0.00       0.00          1
+    I-ship_name (label_id: 11)                               0.00       0.00       0.00          0
+    B-cargo_type (label_id: 12)                              0.00       0.00       0.00          1
+    I-cargo_type (label_id: 13)                              0.00       0.00       0.00          0
+    O (label_id: 14)                                       100.00       5.88      11.11         17
+    -------------------
+    micro avg                                                4.35       4.35       4.35         23
+    macro avg                                               16.67       0.98       1.85         23
+    weighted avg                                            73.91       4.35       8.21         23
+    

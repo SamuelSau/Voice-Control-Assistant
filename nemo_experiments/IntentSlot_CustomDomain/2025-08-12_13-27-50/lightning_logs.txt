@@ -1,0 +1,31 @@
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..
+You are using a CUDA device ('NVIDIA GeForce RTX 4070') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name                         | Type                    | Params | Mode 
+---------------------------------------------------------------------------------
+0 | bert_model                   | DistilBertEncoder       | 66.4 M | eval 
+1 | classifier                   | SequenceTokenClassifier | 23.1 K | train
+2 | intent_loss                  | CrossEntropyLoss        | 0      | train
+3 | slot_loss                    | CrossEntropyLoss        | 0      | train
+4 | total_loss                   | AggregatorLoss          | 0      | train
+5 | intent_classification_report | ClassificationReport    | 0      | train
+6 | slot_classification_report   | ClassificationReport    | 0      | train
+---------------------------------------------------------------------------------
+66.4 M    Trainable params
+0         Non-trainable params
+66.4 M    Total params
+265.544   Total estimated model params size (MB)
+11        Modules in train mode
+92        Modules in eval mode
+
+Detected KeyboardInterrupt, attempting graceful shutdown ...

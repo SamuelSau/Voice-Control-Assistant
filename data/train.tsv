@@ -1,0 +1,16 @@
+sentence	label
+Book a container for tomorrow	0
+Book container X for next Monday	0
+Cancel my container booking	1
+Does container A exist	2
+List all available containers	3
+What is the status of container Z	4
+Show me the containers in port Miami	5
+Schedule maintenance for crane number 5	6
+When is the next ship arriving	7
+Where is ship Orion located	8
+Update the destination of container X	9
+Set the destination of container Y to Hamburg	9
+Check the load status of crane 12	10
+Book a shipment of steel rods	11
+Cancel my shipment of grain	12
