@@ -1,2 +1,0 @@
-[NeMo W 2025-08-11 19:58:26 save_restore_connector:430] src path does not exist or it is not a path in nemo file. src value I got was: ../models/nlp/tokenizer.vocab_file. Absolute: /mnt/c/Users/Sammy/GitHubProjects/models/nlp/tokenizer.vocab_file
-[NeMo W 2025-08-11 19:58:27 modelPT:291] You tried to register an artifact under config key=tokenizer.vocab_file but an artifact for it has already been registered.

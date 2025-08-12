@@ -1,6 +1,0 @@
-Using 16bit Automatic Mixed Precision (AMP)
-💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
-GPU available: True (cuda), used: True
-TPU available: False, using: 0 TPU cores
-HPU available: False, using: 0 HPUs
-`Trainer(val_check_interval=1.0)` was configured so validation will run at the end of the training epoch..

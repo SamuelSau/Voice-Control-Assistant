@@ -1,9 +1,0 @@
-nvidia-riva-client
-ipython
-grpc
-grpcio
-grpcio-tools
-numpy
-wave
-platform
-os
