@@ -14,3 +14,46 @@ Set the destination of container Y to Hamburg	9
 Check the load status of crane 12	10
 Book a shipment of steel rods	11
 Cancel my shipment of grain	12
+Book container Alpha for next Monday    0
+Book container BZ-12 for tomorrow   0
+Book container Delta in Miami on Friday 0
+Cancel container Gamma immediately  1
+Cancel container QZ-77 scheduled for next week  1
+Check container Bravo in warehouse A    2
+Check container ZX-99 at Los Angeles port   2
+List containers in storage area five    3
+List containers ready for departure 3
+Check container status for Omega    4
+Check container status of QY-21 in dockyard 4
+List containers by location Singapore   5
+List containers by location San Francisco   5
+Schedule maintenance for crane C-14 on 15th June    6
+Schedule maintenance for forklift in section B  6
+Query ship schedule for Pacific Star    7
+Query ship schedule arriving at Hamburg 7
+Query ship location for Ocean Queen 8
+Query ship location near Cape Town  8
+Update the destination of container X to Berlin 9
+Set container Y's destination to New York   9
+Check the status of crane 5 10
+Verify forklift 12 operational status   10
+Book a shipment of electronics to London    11
+Schedule shipment of steel beams to Hamburg 11
+Cancel shipment of medical supplies 12
+Cancel the shipment of furniture to Miami   12
+Cancel maintenance on crane C3  13
+Cancel the equipment check for forklift B2  13
+List all forklifts in warehouse 2   14
+Show cranes available in dock 5 14
+Update container Z destination to Singapore 9
+Redirect container W to Rotterdam   9
+Check maintenance status of crane 7 10
+Verify equipment availability in section D  10
+Book shipment of chemicals to Rotterdam 11
+Book a shipment of food supplies to Hamburg 11
+Cancel shipment for container V 12
+Cancel shipment of container U  12
+Cancel forklift maintenance scheduled for today 13
+Cancel crane inspection in bay 3    13
+List all equipment located in warehouse 7   14
+Show all operational equipment in port Hamburg  14
