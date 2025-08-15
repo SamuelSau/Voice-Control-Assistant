@@ -1,7 +1,7 @@
 trainer:
   devices: 1
   num_nodes: 1
-  max_epochs: 20
+  max_epochs: 50
   max_steps: -1
   accumulate_grad_batches: 1
   precision: 16

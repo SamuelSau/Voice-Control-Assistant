@@ -1,4 +1,5 @@
 mismatch = False
+total_mismatches = 0
 for split in ["train", "val", "test"]:
     with open(f"../data/{split}.tsv") as f_sent, open(f"../data/{split}_slots.tsv") as f_slot:
         next(f_sent)  # skip header in sentences file
@@ -10,6 +11,8 @@ for split in ["train", "val", "test"]:
                 mismatch=True
                 print(f"{split} line {idx} mismatch: {len(tokens)} tokens vs {len(slots)} slots")
                 print(f"  Sentence: {sent_text}")
-                print(f"  Slots:    {slot_line.strip()}")  # print the raw slot line
+                print(f"  Slots:    {slot_line.strip()}")
+                total_mismatches+=1
 if mismatch == False:
     print("There were no mismatches")
+print("Total mismatches:", total_mismatches)
