@@ -70,6 +70,10 @@ def main(cfg: DictConfig) -> None:
 
     logging.info("Inference finished!")
 
+    # Save the trained model to a .nemo archive
+    logging.info("Saving the trained model to .nemo archive...")
+    model.save_to(cfg.model.nemo_path)
+    logging.info(f"Model saved to: {cfg.model.nemo_path}")
 
 if __name__ == '__main__':
     main()
