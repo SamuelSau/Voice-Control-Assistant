@@ -11,8 +11,8 @@ from nemo.utils.exp_manager import exp_manager
 def main(cfg: DictConfig) -> None:
     # PTL 2.0 has find_unused_parameters as False by default, so its required to set it to True
     # when there are unused parameters like here
-    if cfg.trainer.strategy == 'ddp':
-        cfg.trainer.strategy = "ddp_find_unused_parameters_true"
+    #if cfg.trainer.strategy == 'ddp':
+    #    cfg.trainer.strategy = "ddp_find_unused_parameters_true"
     logging.info(f'Config Params:\n {OmegaConf.to_yaml(cfg)}')
     trainer = Trainer(**cfg.trainer)
     exp_manager(trainer, cfg.get("exp_manager", None))
@@ -55,9 +55,9 @@ def main(cfg: DictConfig) -> None:
     # this will work well if you train the model on Assistant dataset
     # for your own dataset change the examples appropriately
     queries = [
-        'does container Z exist?',
-        'move container Y',
-        'check container X',
+        'Update container Z',
+        'Book shipment of steel beams',
+        'Check container X for 16th August',
     ]
 
     pred_intents, pred_slots = eval_model.predict_from_examples(queries, cfg.model.test_ds)
