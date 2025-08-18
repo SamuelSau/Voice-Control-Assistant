@@ -1,5 +1,82 @@
 sentence	label
-Does container D, E, and F exist?	2
-Are containers G and H available?	2
-List containers near dock 5	3
-Verify container Z status	2
+Check container Hotel at Tokyo	2
+List containers near Cape Town	3
+Where is ship Pacific Star located	8
+Schedule maintenance for straddle carrier C3 on 3rd March	6
+Book shipment of clothing to Rotterdam	11
+Check straddle carrier A1 operational status	10
+Query ship schedule for Neptune Voyager	7
+Cancel container Juliet booking scheduled for 30th August	1
+Cancel container India booking scheduled for 25th July	1
+List containers near Los Angeles	3
+Update container India destination to Cape Town	9
+Update container Bravo destination to Singapore	9
+Schedule maintenance for straddle carrier A1 on 5th May	6
+Book a shipment of food supplies to Hamburg	11
+Schedule maintenance for crane G7 on 30th August	6
+List containers near Singapore	3
+Check status of container Delta in Cape Town	4
+Update container Juliet destination to Miami	9
+List all equipment located in warehouse 7	14
+List containers near Tokyo	3
+Check container Alpha at New York	2
+Book shipment of timber to Hamburg	11
+Book shipment of electronics to Miami	11
+Where is ship Neptune Voyager located	8
+Book container Charlie for delivery on 5th May	0
+Cancel maintenance for forklift D4	13
+Cancel maintenance for straddle carrier D4	13
+Query ship schedule for Neptune Voyager	7
+Book container Delta for delivery on 1st January	0
+Book container Hotel for delivery on 14th September	0
+List containers by location Singapore	5
+Check straddle carrier D4 operational status	10
+Where is ship Sea Breeze located	8
+Cancel container Alpha booking scheduled for 5th May	1
+Book container Echo for delivery on 30th August	0
+Cancel maintenance for forklift C3	13
+Update container Charlie destination to Cape Town	9
+Check container Delta at Miami	2
+Book container Alpha for delivery on 20th April	0
+Cancel shipment of grain to London	12
+Check status of container Juliet in Los Angeles	4
+Query ship schedule for Marine Falcon	7
+Book container Alpha for delivery on 9th October	0
+Cancel maintenance for straddle carrier I9	13
+Check status of container Juliet in Cape Town	4
+Cancel shipment of electronics to Rotterdam	12
+Cancel container Charlie booking scheduled for 30th August	1
+Book shipment of chemicals to London	11
+Schedule maintenance for crane number 5	6
+List all forklifts in Rotterdam	14
+Cancel maintenance for forklift A1	13
+Check status of container Charlie in Los Angeles	4
+Query ship schedule for Ocean Queen	7
+Update container Bravo destination to Hamburg	9
+List containers by location Tokyo	5
+Book shipment of chemicals to Rotterdam	11
+Schedule maintenance for reach stacker D4 on 3rd March	6
+List containers near Cape Town	3
+Cancel shipment of automobile parts to Tokyo	12
+List containers near Cape Town	3
+Book container Bravo for delivery on 1st January	0
+Cancel shipment of automobile parts to Dubai	12
+Check gantry crane I9 operational status	10
+Query ship schedule arriving at Hamburg	7
+Cancel shipment of furniture to Los Angeles	12
+Schedule maintenance for crane J10 on 20th April	6
+Book container Echo for delivery on 5th May	0
+Book shipment of steel rods to New York	11
+Schedule maintenance for gantry crane B2 on 20th April	6
+Cancel shipment of clothing to Hamburg	12
+List containers near London	3
+Update container Echo destination to Hamburg	9
+List containers near Singapore	3
+Check forklift B2 operational status	10
+List all reach stackers in Miami	14
+Check gantry crane F6 operational status	10
+Cancel container Echo booking scheduled for 1st January	1
+Book container Bravo for delivery on 3rd March	0
+Query ship location for Ocean Queen	8
+Cancel maintenance for straddle carrier H8	13
+List all cranes in Miami	14

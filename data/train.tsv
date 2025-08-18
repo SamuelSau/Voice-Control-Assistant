@@ -1,805 +1,641 @@
 sentence	label
-Book a container for tomorrow	0
-Book container X for next Monday	0
-Cancel my container booking	1
-Does container A exist	2
-List all available containers	3
-What is the status of container Z	4
-Show me the containers in port Miami	5
-Schedule maintenance for crane number 5	6
-When is the next ship arriving	7
-Where is ship Orion located	8
-Update the destination of container X	9
-Set the destination of container Y to Hamburg	9
-Check the load status of crane 12	10
-Book a shipment of steel rods	11
-Cancel my shipment of grain	12
-Book container Alpha for next Monday	0
-Book container BZ-12 for tomorrow	0
-Book container Delta in Miami on Friday	0
-Cancel container Gamma immediately	1
-Cancel container QZ-77 scheduled for next week	1
-Check container Bravo in warehouse A	2
-Check container ZX-99 at Los Angeles port	2
-Check container status for Omega	4
-Check container status of QY-21 in dockyard	4
-List containers by location Singapore	5
-List containers by location San Francisco	5
-Schedule maintenance for crane C-14 on 15th June	6
-Schedule maintenance for forklift in section B	6
-Query ship schedule for Pacific Star	7
-Query ship schedule arriving at Hamburg	7
-Query ship location for Ocean Queen	8
-Query ship location near Cape Town	8
-Update the destination of container X to Berlin	9
-Set container Y's destination to New York	9
-Check the status of crane 5	10
-Verify forklift 12 operational status	10
-Book a shipment of electronics to London	11
-Schedule shipment of steel beams to Hamburg	11
-Cancel shipment of medical supplies	12
-Cancel the shipment of furniture to Miami	12
-Cancel maintenance on crane C3	13
-Cancel the equipment check for forklift B2	13
-List all forklifts in warehouse 2	14
-Show cranes available in dock 5	14
-Update container Z destination to Singapore	9
-Redirect container W to Rotterdam	9
-Check maintenance status of crane 7	10
-Verify equipment availability in section D	10
-Book shipment of chemicals to Rotterdam	11
-Book a shipment of food supplies to Hamburg	11
-Cancel shipment for container V	12
-Cancel shipment of container U	12
-Cancel forklift maintenance scheduled for today	13
-Cancel crane inspection in bay 3	13
-List all equipment located in warehouse 7	14
-Show all operational equipment in port Hamburg	14
-Book container Foxtrot for delivery on 5th May	0
-Book container Foxtrot for delivery on 20th April	0
-Book container Bravo for delivery on 20th April	0
-Book container Echo for delivery on 30th August	0
-Book container Charlie for delivery on 3rd March	0
-Book container Echo for delivery on 3rd March	0
-Book container Juliet for delivery on 20th April	0
-Book container Echo for delivery on 30th August	0
-Book container Hotel for delivery on 25th July	0
-Book container Echo for delivery on 5th May	0
-Book container Bravo for delivery on 1st January	0
-Book container Delta for delivery on 9th October	0
-Book container Alpha for delivery on 20th April	0
-Book container Charlie for delivery on 12th June	0
-Book container Alpha for delivery on 14th September	0
-Book container Juliet for delivery on 3rd March	0
-Book container Alpha for delivery on 9th October	0
-Book container Juliet for delivery on 30th August	0
-Book container Golf for delivery on 30th August	0
-Book container India for delivery on 3rd March	0
-Book container Hotel for delivery on 14th September	0
-Book container Hotel for delivery on 15th February	0
-Book container Charlie for delivery on 5th May	0
-Book container India for delivery on 25th July	0
-Book container Echo for delivery on 12th June	0
-Book container Delta for delivery on 1st January	0
-Book container Delta for delivery on 1st January	0
-Book container Alpha for delivery on 14th September	0
-Book container Bravo for delivery on 3rd March	0
-Book container Echo for delivery on 14th September	0
-Book container Alpha for delivery on 20th April	0
-Book container Juliet for delivery on 25th July	0
-Book container Foxtrot for delivery on 9th October	0
-Book container Delta for delivery on 14th September	0
-Book container Juliet for delivery on 12th June	0
-Book container Foxtrot for delivery on 9th October	0
-Book container Juliet for delivery on 15th February	0
-Book container Foxtrot for delivery on 9th October	0
-Book container Bravo for delivery on 25th July	0
-Book container Foxtrot for delivery on 9th October	0
-Book container Foxtrot for delivery on 9th October	0
-Book container Echo for delivery on 3rd March	0
-Book container Bravo for delivery on 12th June	0
-Book container Echo for delivery on 14th September	0
-Book container Hotel for delivery on 25th July	0
-Book container Echo for delivery on 14th September	0
-Book container Hotel for delivery on 9th October	0
-Book container Golf for delivery on 20th April	0
-Book container Bravo for delivery on 30th August	0
-Book container Bravo for delivery on 25th July	0
-Cancel container Alpha booking scheduled for 9th October	1
-Cancel container India booking scheduled for 9th October	1
-Cancel container Echo booking scheduled for 9th October	1
-Cancel container Juliet booking scheduled for 30th August	1
-Cancel container Alpha booking scheduled for 5th May	1
-Cancel container Bravo booking scheduled for 3rd March	1
-Cancel container Hotel booking scheduled for 30th August	1
-Cancel container Alpha booking scheduled for 5th May	1
-Cancel container Alpha booking scheduled for 20th April	1
-Cancel container Hotel booking scheduled for 15th February	1
-Cancel container Alpha booking scheduled for 3rd March	1
-Cancel container Charlie booking scheduled for 30th August	1
-Cancel container Alpha booking scheduled for 1st January	1
-Cancel container Echo booking scheduled for 25th July	1
-Cancel container India booking scheduled for 5th May	1
-Cancel container Golf booking scheduled for 14th September	1
-Cancel container Charlie booking scheduled for 12th June	1
-Cancel container Delta booking scheduled for 25th July	1
-Cancel container Bravo booking scheduled for 5th May	1
-Cancel container Golf booking scheduled for 20th April	1
-Cancel container Bravo booking scheduled for 20th April	1
-Cancel container Golf booking scheduled for 15th February	1
-Cancel container Charlie booking scheduled for 25th July	1
-Cancel container Delta booking scheduled for 9th October	1
-Cancel container Golf booking scheduled for 15th February	1
-Cancel container Echo booking scheduled for 14th September	1
-Cancel container Bravo booking scheduled for 20th April	1
-Cancel container Delta booking scheduled for 5th May	1
-Cancel container Juliet booking scheduled for 25th July	1
-Cancel container Echo booking scheduled for 5th May	1
-Cancel container Charlie booking scheduled for 1st January	1
-Cancel container Charlie booking scheduled for 30th August	1
-Cancel container Juliet booking scheduled for 9th October	1
-Cancel container Echo booking scheduled for 1st January	1
-Cancel container Golf booking scheduled for 3rd March	1
-Cancel container Foxtrot booking scheduled for 30th August	1
-Cancel container Charlie booking scheduled for 14th September	1
-Cancel container Charlie booking scheduled for 14th September	1
-Cancel container Juliet booking scheduled for 25th July	1
-Cancel container India booking scheduled for 30th August	1
-Cancel container India booking scheduled for 3rd March	1
-Cancel container Charlie booking scheduled for 1st January	1
-Cancel container Juliet booking scheduled for 15th February	1
-Cancel container Juliet booking scheduled for 15th February	1
-Cancel container Alpha booking scheduled for 1st January	1
-Cancel container Bravo booking scheduled for 3rd March	1
-Cancel container Hotel booking scheduled for 15th February	1
-Cancel container India booking scheduled for 25th July	1
-Cancel container Hotel booking scheduled for 5th May	1
-Cancel container India booking scheduled for 25th July	1
-Check container Hotel at Dubai	2
-Check container Charlie at Los Angeles	2
-Check container Charlie at Miami	2
-Check container Alpha at Miami	2
-Check container Alpha at Hamburg	2
-Check container Hotel at London	2
-Check container Alpha at Rotterdam	2
-Check container Hotel at Los Angeles	2
-Check container Juliet at Tokyo	2
-Check container Foxtrot at Los Angeles	2
-Check container Alpha at Dubai	2
-Check container India at Los Angeles	2
-Check container Charlie at Hamburg	2
-Check container Charlie at London	2
-Check container Foxtrot at Dubai	2
-Check container Echo at Hamburg	2
-Check container Foxtrot at Los Angeles	2
-Check container Echo at Hamburg	2
-Check container Delta at Miami	2
-Check container Alpha at Cape Town	2
-Check container Golf at Hamburg	2
-Check container Bravo at London	2
-Check container Foxtrot at Miami	2
-Check container Echo at Miami	2
-Check container Golf at Tokyo	2
-Check container Delta at Dubai	2
-Check container Delta at London	2
-Check container Charlie at Cape Town	2
-Check container Charlie at Dubai	2
-Check container Delta at Cape Town	2
-Check container Juliet at Singapore	2
-Check container Echo at Cape Town	2
-Check container Golf at Hamburg	2
-Check container Echo at Los Angeles	2
-Check container Echo at Singapore	2
-Check container Echo at Dubai	2
-Check container India at London	2
-Check container Juliet at Miami	2
-Check container Hotel at Cape Town	2
-Check container Alpha at Singapore	2
-Check container Alpha at Cape Town	2
-Check container Echo at Los Angeles	2
-Check container Foxtrot at Dubai	2
-Check container Alpha at New York	2
-Check container Alpha at Cape Town	2
-Check container Golf at Tokyo	2
-Check container Alpha at Singapore	2
-Check container Delta at Singapore	2
-Check container Hotel at Tokyo	2
-Check container Hotel at New York	2
-List containers near Cape Town	3
-List containers near Hamburg	3
-List containers near Cape Town	3
-List containers near Tokyo	3
-List containers near Tokyo	3
-List containers near Cape Town	3
-List containers near Hamburg	3
-List containers near Tokyo	3
-List containers near Hamburg	3
-List containers near Singapore	3
-List containers near New York	3
-List containers near Tokyo	3
-List containers near Los Angeles	3
-List containers near Rotterdam	3
-List containers near Los Angeles	3
-List containers near New York	3
-List containers near Los Angeles	3
-List containers near Rotterdam	3
-List containers near Rotterdam	3
-List containers near Tokyo	3
-List containers near Miami	3
-List containers near Singapore	3
-List containers near Cape Town	3
-List containers near Hamburg	3
-List containers near Miami	3
-List containers near Singapore	3
-List containers near Dubai	3
-List containers near London	3
-List containers near Miami	3
-List containers near London	3
-List containers near Rotterdam	3
-List containers near New York	3
-List containers near New York	3
-List containers near Dubai	3
-List containers near Cape Town	3
-List containers near Los Angeles	3
-List containers near Hamburg	3
-List containers near Rotterdam	3
-List containers near Tokyo	3
-List containers near Cape Town	3
-List containers near Los Angeles	3
-List containers near Cape Town	3
-List containers near London	3
-List containers near Cape Town	3
-List containers near Cape Town	3
-List containers near Rotterdam	3
-List containers near Rotterdam	3
-List containers near Dubai	3
-List containers near Dubai	3
-List containers near New York	3
-Check status of container Delta in Hamburg	4
-Check status of container Charlie in Tokyo	4
-Check status of container Golf in Singapore	4
-Check status of container Foxtrot in Cape Town	4
-Check status of container Juliet in Los Angeles	4
-Check status of container Hotel in Los Angeles	4
-Check status of container India in New York	4
-Check status of container Juliet in Miami	4
-Check status of container Foxtrot in Tokyo	4
-Check status of container Echo in Rotterdam	4
-Check status of container Delta in Cape Town	4
-Check status of container Hotel in Miami	4
-Check status of container India in Miami	4
-Check status of container Charlie in Los Angeles	4
-Check status of container Echo in Tokyo	4
-Check status of container Charlie in Los Angeles	4
-Check status of container Hotel in Hamburg	4
-Check status of container Bravo in Singapore	4
-Check status of container India in Tokyo	4
-Check status of container Alpha in Los Angeles	4
-Check status of container Juliet in Singapore	4
-Check status of container Hotel in Dubai	4
-Check status of container Charlie in Rotterdam	4
-Check status of container Echo in Tokyo	4
-Check status of container Echo in Cape Town	4
-Check status of container Hotel in London	4
-Check status of container Alpha in Cape Town	4
-Check status of container Juliet in London	4
-Check status of container India in Hamburg	4
-Check status of container Echo in Dubai	4
-Check status of container Charlie in Los Angeles	4
-Check status of container Juliet in London	4
-Check status of container India in Miami	4
-Check status of container Golf in Dubai	4
-Check status of container Hotel in New York	4
-Check status of container Golf in Singapore	4
-Check status of container Hotel in Tokyo	4
-Check status of container Echo in Rotterdam	4
-Check status of container Charlie in Dubai	4
-Check status of container Golf in London	4
-Check status of container Juliet in Cape Town	4
-Check status of container Charlie in London	4
-Check status of container Bravo in Tokyo	4
-Check status of container Bravo in Dubai	4
-Check status of container Charlie in Tokyo	4
-Check status of container Charlie in Hamburg	4
-Check status of container Echo in New York	4
-Check status of container Juliet in Cape Town	4
-Check status of container Alpha in Dubai	4
-Check status of container Echo in Miami	4
-List containers by location Hamburg	5
-List containers by location New York	5
-List containers by location Rotterdam	5
-List containers by location Singapore	5
-List containers by location Los Angeles	5
-List containers by location Miami	5
-List containers by location Tokyo	5
-List containers by location Hamburg	5
-List containers by location Singapore	5
-List containers by location New York	5
-List containers by location Cape Town	5
-List containers by location Miami	5
-List containers by location Rotterdam	5
-List containers by location Dubai	5
-List containers by location Rotterdam	5
-List containers by location Los Angeles	5
-List containers by location Miami	5
-List containers by location Rotterdam	5
-List containers by location New York	5
-List containers by location Cape Town	5
-List containers by location Los Angeles	5
-List containers by location Los Angeles	5
-List containers by location Hamburg	5
-List containers by location Rotterdam	5
-List containers by location London	5
-List containers by location Rotterdam	5
-List containers by location Hamburg	5
-List containers by location Los Angeles	5
-List containers by location Dubai	5
-List containers by location Rotterdam	5
-List containers by location Cape Town	5
-List containers by location Tokyo	5
-List containers by location Miami	5
-List containers by location Tokyo	5
-List containers by location Miami	5
-List containers by location Dubai	5
-List containers by location Cape Town	5
-List containers by location Hamburg	5
-List containers by location Miami	5
-List containers by location Tokyo	5
-List containers by location Tokyo	5
-List containers by location Miami	5
-List containers by location Los Angeles	5
-List containers by location Singapore	5
-List containers by location Hamburg	5
-List containers by location Singapore	5
-List containers by location Los Angeles	5
-List containers by location Rotterdam	5
-List containers by location Cape Town	5
-List containers by location Rotterdam	5
-Schedule maintenance for straddle carrier H8 on 15th February	6
-Schedule maintenance for crane J10 on 20th April	6
-Schedule maintenance for straddle carrier J10 on 20th April	6
-Schedule maintenance for crane I9 on 1st January	6
-Schedule maintenance for crane G7 on 30th August	6
-Schedule maintenance for crane F6 on 9th October	6
-Schedule maintenance for straddle carrier A1 on 12th June	6
-Schedule maintenance for crane I9 on 20th April	6
-Schedule maintenance for straddle carrier G7 on 15th February	6
-Schedule maintenance for reach stacker D4 on 3rd March	6
-Schedule maintenance for forklift A1 on 3rd March	6
-Schedule maintenance for gantry crane B2 on 20th April	6
-Schedule maintenance for straddle carrier C3 on 3rd March	6
-Schedule maintenance for forklift B2 on 20th April	6
-Schedule maintenance for straddle carrier E5 on 14th September	6
-Schedule maintenance for forklift C3 on 9th October	6
-Schedule maintenance for forklift D4 on 3rd March	6
-Schedule maintenance for reach stacker G7 on 15th February	6
-Schedule maintenance for gantry crane B2 on 12th June	6
-Schedule maintenance for forklift H8 on 20th April	6
-Schedule maintenance for crane H8 on 5th May	6
-Schedule maintenance for gantry crane F6 on 30th August	6
-Schedule maintenance for reach stacker C3 on 30th August	6
-Schedule maintenance for reach stacker I9 on 1st January	6
-Schedule maintenance for straddle carrier E5 on 1st January	6
-Schedule maintenance for crane B2 on 25th July	6
-Schedule maintenance for forklift E5 on 12th June	6
-Schedule maintenance for straddle carrier F6 on 20th April	6
-Schedule maintenance for gantry crane C3 on 5th May	6
-Schedule maintenance for gantry crane G7 on 3rd March	6
-Schedule maintenance for reach stacker A1 on 20th April	6
-Schedule maintenance for gantry crane A1 on 20th April	6
-Schedule maintenance for straddle carrier D4 on 15th February	6
-Schedule maintenance for gantry crane H8 on 20th April	6
-Schedule maintenance for crane A1 on 30th August	6
-Schedule maintenance for reach stacker H8 on 14th September	6
-Schedule maintenance for gantry crane A1 on 20th April	6
-Schedule maintenance for forklift E5 on 25th July	6
-Schedule maintenance for forklift I9 on 25th July	6
-Schedule maintenance for straddle carrier A1 on 5th May	6
-Schedule maintenance for forklift F6 on 1st January	6
-Schedule maintenance for reach stacker C3 on 20th April	6
-Schedule maintenance for crane B2 on 1st January	6
-Schedule maintenance for crane D4 on 5th May	6
-Schedule maintenance for gantry crane C3 on 15th February	6
-Schedule maintenance for gantry crane F6 on 20th April	6
-Schedule maintenance for forklift B2 on 1st January	6
-Schedule maintenance for straddle carrier F6 on 9th October	6
-Schedule maintenance for reach stacker C3 on 14th September	6
-Schedule maintenance for gantry crane H8 on 9th October	6
-Query ship schedule for Pacific Star	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Ocean Queen	7
-Query ship schedule for Ocean Queen	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Ocean Queen	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Atlantic Pride	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Atlantic Pride	7
-Query ship schedule for Ocean Queen	7
-Query ship schedule for Atlantic Pride	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Atlantic Pride	7
-Query ship schedule for Atlantic Pride	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Neptune Voyager	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Marine Falcon	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Sea Breeze	7
-Query ship schedule for Ocean Queen	7
-Query ship schedule for Atlantic Pride	7
-Query ship schedule for Pacific Star	7
-Query ship schedule for Ocean Queen	7
-Query ship schedule for Marine Falcon	7
-Where is ship Neptune Voyager located	8
-Where is ship Marine Falcon located	8
-Where is ship Ocean Queen located	8
-Where is ship Marine Falcon located	8
-Where is ship Sea Breeze located	8
-Where is ship Marine Falcon located	8
-Where is ship Ocean Queen located	8
-Where is ship Neptune Voyager located	8
-Where is ship Atlantic Pride located	8
-Where is ship Marine Falcon located	8
-Where is ship Atlantic Pride located	8
-Where is ship Neptune Voyager located	8
-Where is ship Neptune Voyager located	8
-Where is ship Marine Falcon located	8
-Where is ship Atlantic Pride located	8
-Where is ship Atlantic Pride located	8
-Where is ship Pacific Star located	8
-Where is ship Sea Breeze located	8
-Where is ship Marine Falcon located	8
-Where is ship Pacific Star located	8
-Where is ship Pacific Star located	8
-Where is ship Marine Falcon located	8
-Where is ship Marine Falcon located	8
-Where is ship Atlantic Pride located	8
-Where is ship Atlantic Pride located	8
-Where is ship Sea Breeze located	8
-Where is ship Ocean Queen located	8
-Where is ship Pacific Star located	8
-Where is ship Pacific Star located	8
-Where is ship Marine Falcon located	8
-Where is ship Pacific Star located	8
-Where is ship Marine Falcon located	8
-Where is ship Marine Falcon located	8
-Where is ship Ocean Queen located	8
-Where is ship Sea Breeze located	8
-Where is ship Marine Falcon located	8
-Where is ship Atlantic Pride located	8
-Where is ship Ocean Queen located	8
-Where is ship Pacific Star located	8
-Where is ship Neptune Voyager located	8
-Where is ship Marine Falcon located	8
-Where is ship Atlantic Pride located	8
-Where is ship Pacific Star located	8
-Where is ship Sea Breeze located	8
-Where is ship Ocean Queen located	8
-Where is ship Sea Breeze located	8
-Where is ship Atlantic Pride located	8
-Where is ship Marine Falcon located	8
-Where is ship Atlantic Pride located	8
-Where is ship Pacific Star located	8
-Update container Charlie destination to Los Angeles	9
-Update container Hotel destination to London	9
-Update container Hotel destination to Los Angeles	9
-Update container India destination to Rotterdam	9
-Update container Charlie destination to Miami	9
-Update container Foxtrot destination to Singapore	9
-Update container Bravo destination to Singapore	9
-Update container Charlie destination to London	9
-Update container Delta destination to London	9
-Update container Foxtrot destination to Hamburg	9
-Update container Echo destination to Hamburg	9
-Update container Delta destination to Hamburg	9
-Update container Alpha destination to Miami	9
-Update container Foxtrot destination to Los Angeles	9
-Update container Delta destination to Tokyo	9
-Update container Foxtrot destination to Cape Town	9
-Update container Juliet destination to New York	9
-Update container Echo destination to Rotterdam	9
-Update container Charlie destination to Cape Town	9
-Update container Juliet destination to Miami	9
-Update container Charlie destination to Cape Town	9
-Update container India destination to Cape Town	9
-Update container India destination to Tokyo	9
-Update container Hotel destination to Tokyo	9
-Update container Golf destination to Los Angeles	9
-Update container Hotel destination to New York	9
-Update container Juliet destination to Miami	9
-Update container Bravo destination to Rotterdam	9
-Update container Foxtrot destination to Hamburg	9
-Update container Charlie destination to Tokyo	9
-Update container Golf destination to Hamburg	9
-Update container Foxtrot destination to London	9
-Update container Golf destination to Miami	9
-Update container Bravo destination to Tokyo	9
-Update container Foxtrot destination to Cape Town	9
-Update container Delta destination to London	9
-Update container Delta destination to Los Angeles	9
-Update container Bravo destination to Cape Town	9
-Update container Echo destination to Rotterdam	9
-Update container Hotel destination to London	9
-Update container Foxtrot destination to Tokyo	9
-Update container Foxtrot destination to London	9
-Update container India destination to New York	9
-Update container Juliet destination to Tokyo	9
-Update container India destination to New York	9
-Update container Bravo destination to Hamburg	9
-Update container Golf destination to Hamburg	9
-Update container India destination to Hamburg	9
-Update container Charlie destination to Singapore	9
-Update container Alpha destination to Hamburg	9
-Check gantry crane J10 operational status	10
-Check gantry crane F6 operational status	10
-Check gantry crane C3 operational status	10
-Check gantry crane E5 operational status	10
-Check crane C3 operational status	10
-Check crane F6 operational status	10
-Check crane I9 operational status	10
-Check crane A1 operational status	10
-Check crane E5 operational status	10
-Check crane F6 operational status	10
-Check forklift E5 operational status	10
-Check crane G7 operational status	10
-Check gantry crane H8 operational status	10
-Check reach stacker G7 operational status	10
-Check straddle carrier B2 operational status	10
-Check straddle carrier A1 operational status	10
-Check straddle carrier B2 operational status	10
-Check forklift I9 operational status	10
-Check reach stacker C3 operational status	10
-Check straddle carrier E5 operational status	10
-Check straddle carrier D4 operational status	10
-Check gantry crane C3 operational status	10
-Check gantry crane D4 operational status	10
-Check gantry crane I9 operational status	10
-Check gantry crane C3 operational status	10
-Check forklift E5 operational status	10
-Check forklift J10 operational status	10
-Check gantry crane F6 operational status	10
-Check straddle carrier A1 operational status	10
-Check gantry crane G7 operational status	10
-Check crane D4 operational status	10
-Check crane F6 operational status	10
-Check straddle carrier A1 operational status	10
-Check crane B2 operational status	10
-Check gantry crane G7 operational status	10
-Check straddle carrier C3 operational status	10
-Check crane A1 operational status	10
-Check forklift D4 operational status	10
-Check reach stacker C3 operational status	10
-Check straddle carrier D4 operational status	10
-Check forklift B2 operational status	10
-Check crane E5 operational status	10
-Check reach stacker J10 operational status	10
-Check crane G7 operational status	10
-Check reach stacker I9 operational status	10
-Check gantry crane F6 operational status	10
-Check gantry crane E5 operational status	10
-Check crane C3 operational status	10
-Check gantry crane I9 operational status	10
-Check forklift F6 operational status	10
-Book shipment of grain to Cape Town	11
-Book shipment of grain to New York	11
-Book shipment of clothing to Dubai	11
-Book shipment of steel rods to New York	11
-Book shipment of grain to Miami	11
-Book shipment of timber to Hamburg	11
-Book shipment of food supplies to Dubai	11
-Book shipment of clothing to Dubai	11
-Book shipment of medical supplies to London	11
-Book shipment of steel rods to Hamburg	11
 Book shipment of furniture to Cape Town	11
-Book shipment of electronics to New York	11
-Book shipment of grain to Los Angeles	11
-Book shipment of grain to Miami	11
-Book shipment of medical supplies to Rotterdam	11
-Book shipment of electronics to Cape Town	11
-Book shipment of grain to London	11
-Book shipment of chemicals to London	11
-Book shipment of furniture to Rotterdam	11
-Book shipment of automobile parts to London	11
-Book shipment of food supplies to Los Angeles	11
-Book shipment of grain to Los Angeles	11
-Book shipment of chemicals to London	11
-Book shipment of clothing to Rotterdam	11
-Book shipment of medical supplies to Rotterdam	11
-Book shipment of medical supplies to Dubai	11
-Book shipment of medical supplies to Cape Town	11
-Book shipment of grain to Tokyo	11
-Book shipment of medical supplies to Los Angeles	11
-Book shipment of timber to Singapore	11
-Book shipment of electronics to Miami	11
-Book shipment of medical supplies to Cape Town	11
-Book shipment of chemicals to Rotterdam	11
-Book shipment of food supplies to Miami	11
-Book shipment of food supplies to Cape Town	11
-Book shipment of food supplies to Singapore	11
-Book shipment of furniture to Dubai	11
-Book shipment of clothing to London	11
-Book shipment of steel rods to Singapore	11
-Book shipment of food supplies to Hamburg	11
-Book shipment of electronics to Tokyo	11
-Book shipment of steel rods to London	11
-Book shipment of automobile parts to Tokyo	11
-Book shipment of chemicals to Singapore	11
-Book shipment of clothing to Miami	11
-Book shipment of furniture to Dubai	11
-Book shipment of grain to Rotterdam	11
-Book shipment of automobile parts to Dubai	11
-Book shipment of clothing to London	11
-Book shipment of chemicals to Hamburg	11
-Cancel shipment of furniture to Los Angeles	12
-Cancel shipment of automobile parts to Hamburg	12
-Cancel shipment of electronics to New York	12
-Cancel shipment of steel rods to Rotterdam	12
+List containers by location Rotterdam	5
+List containers by location Cape Town	5
+Schedule maintenance for forklift I9 on 25th July	6
+Book container India for delivery on 25th July	0
+Cancel container Juliet booking scheduled for 15th February	1
+List containers by location Hamburg	5
+Schedule maintenance for forklift E5 on 12th June	6
+Query ship schedule for Sea Breeze	7
+List containers by location Singapore	5
+Cancel maintenance for straddle carrier C3	13
+Cancel container Delta booking scheduled for 5th May	1
+Schedule maintenance for crane B2 on 25th July	6
+List containers near Tokyo	3
 Cancel shipment of clothing to Dubai	12
-Cancel shipment of clothing to Hamburg	12
-Cancel shipment of timber to Miami	12
-Cancel shipment of grain to Cape Town	12
-Cancel shipment of medical supplies to New York	12
-Cancel shipment of electronics to Los Angeles	12
-Cancel shipment of automobile parts to London	12
-Cancel shipment of steel rods to Singapore	12
-Cancel shipment of chemicals to Tokyo	12
-Cancel shipment of clothing to Hamburg	12
-Cancel shipment of furniture to Hamburg	12
-Cancel shipment of chemicals to Singapore	12
-Cancel shipment of medical supplies to Hamburg	12
-Cancel shipment of automobile parts to Hamburg	12
-Cancel shipment of electronics to Los Angeles	12
-Cancel shipment of electronics to Rotterdam	12
-Cancel shipment of steel rods to Hamburg	12
-Cancel shipment of timber to Los Angeles	12
-Cancel shipment of grain to Dubai	12
-Cancel shipment of chemicals to Tokyo	12
-Cancel shipment of automobile parts to Dubai	12
-Cancel shipment of steel rods to Los Angeles	12
-Cancel shipment of grain to Miami	12
-Cancel shipment of clothing to Singapore	12
-Cancel shipment of grain to Cape Town	12
-Cancel shipment of electronics to Hamburg	12
-Cancel shipment of steel rods to Cape Town	12
-Cancel shipment of automobile parts to Dubai	12
-Cancel shipment of furniture to Singapore	12
-Cancel shipment of furniture to Los Angeles	12
-Cancel shipment of electronics to Dubai	12
-Cancel shipment of grain to Dubai	12
-Cancel shipment of steel rods to Tokyo	12
-Cancel shipment of grain to London	12
-Cancel shipment of food supplies to Hamburg	12
-Cancel shipment of automobile parts to Tokyo	12
-Cancel shipment of steel rods to New York	12
-Cancel shipment of clothing to Hamburg	12
-Cancel shipment of furniture to Dubai	12
-Cancel shipment of furniture to London	12
-Cancel shipment of medical supplies to New York	12
-Cancel shipment of furniture to Cape Town	12
-Cancel shipment of electronics to Singapore	12
-Cancel shipment of clothing to Hamburg	12
-Cancel shipment of chemicals to Rotterdam	12
-Cancel shipment of furniture to Singapore	12
-Cancel maintenance for straddle carrier I9	13
-Cancel maintenance for forklift B2	13
-Cancel maintenance for straddle carrier C3	13
-Cancel maintenance for gantry crane E5	13
-Cancel maintenance for gantry crane A1	13
-Cancel maintenance for crane A1	13
-Cancel maintenance for crane E5	13
-Cancel maintenance for gantry crane D4	13
-Cancel maintenance for gantry crane D4	13
-Cancel maintenance for straddle carrier D4	13
-Cancel maintenance for reach stacker I9	13
-Cancel maintenance for straddle carrier H8	13
-Cancel maintenance for crane G7	13
-Cancel maintenance for gantry crane F6	13
-Cancel maintenance for forklift C3	13
-Cancel maintenance for forklift A1	13
-Cancel maintenance for straddle carrier H8	13
-Cancel maintenance for crane G7	13
-Cancel maintenance for crane B2	13
-Cancel maintenance for forklift H8	13
-Cancel maintenance for forklift G7	13
-Cancel maintenance for gantry crane G7	13
-Cancel maintenance for straddle carrier D4	13
-Cancel maintenance for forklift A1	13
-Cancel maintenance for forklift F6	13
-Cancel maintenance for forklift J10	13
-Cancel maintenance for forklift E5	13
-Cancel maintenance for crane B2	13
-Cancel maintenance for gantry crane A1	13
-Cancel maintenance for reach stacker E5	13
-Cancel maintenance for forklift F6	13
+Show all operational equipment in port Hamburg	14
 Cancel maintenance for forklift I9	13
-Cancel maintenance for reach stacker E5	13
-Cancel maintenance for forklift D4	13
-Cancel maintenance for forklift B2	13
-Cancel maintenance for crane J10	13
-Cancel maintenance for reach stacker H8	13
-Cancel maintenance for forklift J10	13
-Cancel maintenance for reach stacker E5	13
-Cancel maintenance for forklift F6	13
-Cancel maintenance for crane J10	13
-Cancel maintenance for gantry crane G7	13
-Cancel maintenance for straddle carrier A1	13
-Cancel maintenance for gantry crane A1	13
-Cancel maintenance for gantry crane I9	13
-Cancel maintenance for straddle carrier C3	13
-Cancel maintenance for crane A1	13
-Cancel maintenance for gantry crane G7	13
-Cancel maintenance for crane C3	13
-Cancel maintenance for straddle carrier D4	13
-List all straddle carrier in Singapore	14
-List all forklift in London	14
-List all gantry crane in Cape Town	14
-List all forklift in Dubai	14
-List all reach stacker in Cape Town	14
-List all reach stacker in Singapore	14
-List all crane in Miami	14
-List all reach stacker in Rotterdam	14
-List all reach stacker in New York	14
-List all reach stacker in Singapore	14
-List all straddle carrier in Rotterdam	14
-List all crane in Tokyo	14
-List all reach stacker in Hamburg	14
-List all straddle carrier in Los Angeles	14
-List all crane in Los Angeles	14
-List all gantry crane in Los Angeles	14
-List all forklift in Singapore	14
-List all reach stacker in Dubai	14
-List all forklift in Los Angeles	14
-List all gantry crane in Cape Town	14
-List all straddle carrier in Singapore	14
-List all crane in Los Angeles	14
-List all crane in Miami	14
-List all gantry crane in Los Angeles	14
-List all forklift in Dubai	14
-List all reach stacker in Cape Town	14
-List all straddle carrier in Miami	14
-List all forklift in Cape Town	14
-List all crane in Singapore	14
-List all forklift in Cape Town	14
-List all forklift in New York	14
-List all reach stacker in Miami	14
-List all forklift in Rotterdam	14
-List all forklift in New York	14
-List all forklift in Dubai	14
+Book shipment of clothing to Dubai	11
+Check gantry crane F6 operational status	10
+Book shipment of automobile parts to Tokyo	11
+Update container India destination to Tokyo	9
+Check container Alpha at Cape Town	2
+Cancel maintenance for gantry crane D4	13
+Cancel shipment of electronics to Dubai	12
+Book container Charlie for delivery on 3rd March	0
+Book shipment of chemicals to Singapore	11
+Book shipment of medical supplies to Cape Town	11
+Query ship schedule for Atlantic Pride	7
+Check gantry crane I9 operational status	10
+Query ship schedule for Marine Falcon	7
+Query ship schedule for Marine Falcon	7
+List containers near Cape Town	3
+Check crane F6 operational status	10
+Check straddle carrier B2 operational status	10
+Book container Juliet for delivery on 12th June	0
+Book shipment of furniture to Dubai	11
+Check container Delta at Dubai	2
 List all crane in Hamburg	14
-List all reach stacker in Miami	14
-List all crane in Rotterdam	14
-List all gantry crane in Rotterdam	14
-List all crane in New York	14
-List all forklift in Los Angeles	14
-List all gantry crane in New York	14
-List all crane in Los Angeles	14
-List all forklift in Rotterdam	14
-List all forklift in Hamburg	14
-List all crane in Dubai	14
-List all forklift in Hamburg	14
-List all reach stacker in Singapore 14
+Book shipment of clothing to London	11
+Check status of container Hotel in New York	4
+Check container Charlie at Miami	2
+Book container Charlie for delivery on 12th June	0
+Update container Alpha destination to Miami	9
+Cancel container Echo booking scheduled for 14th September	1
+Update container Z destination to Singapore	9
+Book container Alpha for delivery on 14th September	0
+Cancel shipment of steel rods to Tokyo	12
+List containers by location Rotterdam	5
+Query ship schedule for Pacific Star	7
+List all cranes in Miami	14
+Cancel container Echo booking scheduled for 5th May	1
+Book container Delta for delivery on 1st January	0
+Check container Foxtrot at Los Angeles	2
+Check container Juliet at Tokyo	2
+Query ship schedule for Pacific Star	7
+Query ship schedule for Marine Falcon	7
+Check container Juliet at Miami	2
+List containers near Dubai	3
+Update container Foxtrot destination to Cape Town	9
+Cancel maintenance for forklift J10	13
+Cancel container Charlie booking scheduled for 1st January	1
+Cancel shipment of electronics to Los Angeles	12
+List containers by location Miami	5
+Cancel container Golf booking scheduled for 3rd March	1
+Where is ship Sea Breeze located	8
+Show me the containers in port Miami	5
+Cancel maintenance for forklift A1	13
+List all straddle carriers in Singapore	14
+Book container Juliet for delivery on 30th August	0
+List all cranes in Tokyo	14
+Check status of container Bravo in Dubai	4
+Cancel container India booking scheduled for 30th August	1
+Check status of container Hotel in Tokyo	4
+List containers near Miami	3
+List containers near Los Angeles	3
+Query ship schedule for Sea Breeze	7
+Schedule maintenance for straddle carrier E5 on 1st January	6
+Cancel container Bravo booking scheduled for 20th April	1
+Schedule maintenance for forklift H8 on 20th April	6
+Schedule maintenance for reach stacker C3 on 14th September	6
+Update container Echo destination to Rotterdam	9
+Cancel maintenance for gantry crane I9	13
+Query ship schedule for Pacific Star	7
+Cancel the equipment check for forklift B2	13
+Where is ship Neptune Voyager located	8
+Cancel container Echo booking scheduled for 9th October	1
+List containers by location Miami	5
+Book container Foxtrot for delivery on 5th May	0
+Check status of container Foxtrot in Cape Town	4
+Where is ship Atlantic Pride located	8
+Book shipment of food supplies to Los Angeles	11
+List containers near Singapore	3
+List containers near Hamburg	3
+Check reach stacker C3 operational status	10
+List containers by location Hamburg	5
+List containers by location Singapore	5
+List all reach stackers in Cape Town	14
+List containers by location Singapore	5
+Schedule maintenance for straddle carrier H8 on 15th February	6
+Cancel shipment of container U	12
+List containers by location Rotterdam	5
+Cancel maintenance for gantry crane A1	13
+Book shipment of chemicals to London	11
+Where is ship Sea Breeze located	8
+List containers by location Dubai	5
+Check status of container Echo in Dubai	4
+Cancel container Gamma immediately	1
+Check gantry crane G7 operational status	10
+Cancel maintenance for gantry crane A1	13
+Book container Alpha for delivery on 14th September	0
+Book container Echo for delivery on 3rd March	0
+Where is ship Ocean Queen located	8
+Check status of container Golf in Singapore	4
+Query ship schedule for Marine Falcon	7
+Check container Delta at London	2
+Check straddle carrier E5 operational status	10
+Where is ship Ocean Queen located	8
+List containers near Rotterdam	3
+Query ship schedule for Pacific Star	7
+Where is ship Neptune Voyager located	8
+List containers by location Dubai	5
+List containers by location Hamburg	5
+Query ship schedule for Marine Falcon	7
+Where is ship Ocean Queen located	8
+Check container Golf at Hamburg	2
+Update container Foxtrot destination to London	9
+Schedule maintenance for crane I9 on 20th April	6
+Check container Hotel at Los Angeles	2
+List containers near London	3
+Update container Foxtrot destination to Los Angeles	9
+Cancel maintenance for crane A1	13
+Book container Golf for delivery on 30th August	0
+Book shipment of medical supplies to Rotterdam	11
+Schedule maintenance for gantry crane H8 on 9th October	6
+Book container Bravo for delivery on 30th August	0
+Cancel container Alpha booking scheduled for 20th April	1
+Check status of container Charlie in Tokyo	4
+Book container Juliet for delivery on 15th February	0
+Query ship schedule for Pacific Star	7
+Book container Delta for delivery on 14th September	0
+Update container Hotel destination to Tokyo	9
+Cancel maintenance for reach stacker E5	13
+Cancel maintenance for reach stacker E5	13
+Check straddle carrier D4 operational status	10
+Where is ship Atlantic Pride located	8
+Where is ship Pacific Star located	8
+Set the destination of container Y to Hamburg	9
+Query ship schedule for Sea Breeze	7
+Show cranes available in dock 5	14
+List all forklifts in warehouse 2	14
+Check container India at Los Angeles	2
+Cancel shipment of chemicals to Rotterdam	12
+List all cranes in Rotterdam	14
+Query ship schedule for Neptune Voyager	7
+Check container Foxtrot at Miami	2
+Update container Hotel destination to New York	9
+Book shipment of chemicals to Hamburg	11
+Check container Bravo at London	2
+Update container Charlie destination to Singapore	9
+Cancel maintenance for forklift E5	13
+Check status of container Charlie in Tokyo	4
+List all straddle carriers in Rotterdam	14
+Update container Echo destination to Rotterdam	9
+Book container Alpha for next Monday	0
+Does container A exist	2
+List containers by location Rotterdam	5
+Check status of container Delta in Hamburg	4
+Check forklift E5 operational status	10
+Query ship schedule for Marine Falcon	7
+List containers by location Miami	5
+Where is ship Marine Falcon located	8
+Query ship schedule for Sea Breeze	7
+Book shipment of food supplies to Cape Town	11
+Cancel maintenance for forklift H8	13
+List containers by location New York	5
+Where is ship Marine Falcon located	8
+Where is ship Orion located	8
+List containers near Cape Town	3
+Check container status for Omega	4
+List containers near New York	3
+Update container India destination to New York	9
+Cancel shipment of grain to Dubai	12
+List all forklifts in Cape Town	14
+Book shipment of medical supplies to Rotterdam	11
+List containers by location Miami	5
+Cancel shipment of medical supplies to Hamburg	12
+Check container Delta at Singapore	2
+List containers near New York	3
+Book container Foxtrot for delivery on 9th October	0
+Update container Juliet destination to Miami	9
+Schedule maintenance for straddle carrier A1 on 12th June	6
+Update container Hotel destination to London	9
+Check status of container India in Hamburg	4
+Check container Charlie at Dubai	2
+Book shipment of clothing to Miami	11
+Schedule maintenance for forklift F6 on 1st January	6
+Cancel container India booking scheduled for 25th July	1
+Book container India for delivery on 3rd March	0
+Query ship schedule for Pacific Star	7
+Cancel shipment of steel rods to New York	12
+Check status of container Hotel in Dubai	4
+Book container Alpha for delivery on 20th April	0
+Update container Delta destination to London	9
+Check container Golf at Hamburg	2
+Check status of container Charlie in Los Angeles	4
+List containers near Rotterdam	3
+Book container Foxtrot for delivery on 9th October	0
+Cancel shipment of grain to Miami	12
+Cancel container Charlie booking scheduled for 30th August	1
+Cancel container Golf booking scheduled for 20th April	1
+List all straddle carriers in Miami	14
+Check status of container Golf in Dubai	4
+List containers near New York	3
+Book a container for tomorrow	0
+List all reach stackers in Miami	14
+Check crane C3 operational status	10
+Cancel maintenance for straddle carrier D4	13
+Where is ship Marine Falcon located	8
+Check status of container Charlie in Rotterdam	4
+Book shipment of automobile parts to London	11
+Cancel container Alpha booking scheduled for 3rd March	1
+List containers near Cape Town	3
+Check crane G7 operational status	10
+Query ship schedule for Pacific Star	7
+Query ship schedule for Marine Falcon	7
+Check status of container India in Tokyo	4
+List containers by location Rotterdam	5
+Update container Golf destination to Hamburg	9
+Cancel container Juliet booking scheduled for 25th July	1
+Check gantry crane D4 operational status	10
+Cancel maintenance for forklift F6	13
+Cancel maintenance for gantry crane G7	13
+Check crane D4 operational status	10
+Schedule maintenance for forklift B2 on 20th April	6
+Check status of container India in Miami	4
+Check gantry crane H8 operational status	10
+List containers by location New York	5
+List containers by location Los Angeles	5
+Query ship schedule for Ocean Queen	7
+Check maintenance status of crane 7	10
+List containers by location Singapore	5
+Schedule maintenance for forklift C3 on 9th October	6
+Book shipment of automobile parts to Dubai	11
+Check status of container Hotel in Los Angeles	4
+Check container Alpha at Singapore	2
+List all forklifts in Hamburg	14
+Cancel shipment of automobile parts to Hamburg	12
+Cancel container India booking scheduled for 9th October	1
+Book container Echo for delivery on 30th August	0
+List all reach stackers in Hamburg	14
+Query ship schedule for Sea Breeze	7
+Book container Hotel for delivery on 25th July	0
+Where is ship Marine Falcon located	8
+Cancel maintenance for gantry crane F6	13
+Check straddle carrier A1 operational status	10
+Cancel maintenance for reach stacker E5	13
+Check container Echo at Miami	2
+Check status of container Alpha in Dubai	4
+Query ship schedule for Atlantic Pride	7
+Update container Hotel destination to London	9
+List all gantry cranes in Los Angeles	14
+Cancel container Juliet booking scheduled for 15th February	1
+Cancel container Bravo booking scheduled for 5th May	1
+Book shipment of timber to Singapore	11
+Cancel shipment of furniture to Dubai	12
+Check container Delta at Cape Town	2
+Update container Delta destination to Los Angeles	9
+Cancel shipment for container V	12
+Where is ship Marine Falcon located	8
+List all forklifts in Dubai	14
+Where is ship Marine Falcon located	8
+List containers by location Los Angeles	5
+List containers by location Rotterdam	5
+Cancel maintenance for forklift B2	13
+Cancel container Charlie booking scheduled for 14th September	1
+Schedule maintenance for straddle carrier E5 on 14th September	6
+Cancel container Foxtrot booking scheduled for 30th August	1
+Schedule maintenance for crane D4 on 5th May	6
+Check status of container Juliet in Miami	4
+List containers by location Rotterdam	5
+Cancel container QZ-77 scheduled for next week	1
+Check container Foxtrot at Los Angeles	2
+Cancel shipment of automobile parts to Hamburg	12
+List containers by location Tokyo	5
+Schedule maintenance for crane A1 on 30th August	6
+Cancel maintenance for crane J10	13
+Check the load status of crane 12	10
+Query ship schedule for Sea Breeze	7
+Query ship schedule for Neptune Voyager	7
+Check status of container Echo in Miami	4
+List containers by location Cape Town	5
+List containers by location San Francisco	5
+Check reach stacker J10 operational status	10
+Check container Charlie at London	2
+Cancel shipment of medical supplies	12
+Check container Alpha at Cape Town	2
+List containers near Cape Town	3
+Check status of container Bravo in Tokyo	4
+Cancel shipment of clothing to Hamburg	12
+Query ship schedule for Ocean Queen	7
+Update container Juliet destination to Tokyo	9
+Check status of container Hotel in Hamburg	4
+Cancel shipment of steel rods to Hamburg	12
+Cancel container Hotel booking scheduled for 5th May	1
+Cancel container Bravo booking scheduled for 20th April	1
+Query ship schedule for Pacific Star	7
+Check straddle carrier B2 operational status	10
+List containers by location Dubai	5
+Query ship schedule for Ocean Queen	7
+Check status of container Juliet in London	4
+Cancel container Alpha booking scheduled for 5th May	1
+Where is ship Sea Breeze located	8
+Check container Echo at Hamburg	2
+Schedule maintenance for crane I9 on 1st January	6
+Where is ship Ocean Queen located	8
+Book container Foxtrot for delivery on 20th April	0
+Cancel shipment of automobile parts to London	12
+List containers near Los Angeles	3
+Check status of container Echo in Cape Town	4
+Book container Delta in Miami on Friday	0
+Cancel container Golf booking scheduled for 15th February	1
+List containers by location Miami	5
+List containers near New York	3
+Update container Bravo destination to Tokyo	9
+Where is ship Atlantic Pride located	8
+Check crane G7 operational status	10
+Where is ship Neptune Voyager located	8
+List all forklifts in Dubai	14
+Check container Echo at Singapore	2
+Cancel container Hotel booking scheduled for 15th February	1
+Update container Delta destination to Hamburg	9
+Cancel maintenance for gantry crane A1	13
+Update container Golf destination to Hamburg	9
+Book container Bravo for delivery on 25th July	0
+Check container Golf at Tokyo	2
+Check status of container Charlie in Hamburg	4
+Book shipment of electronics to New York	11
+Check forklift J10 operational status	10
+Check straddle carrier C3 operational status	10
+List all gantry cranes in Cape Town	14
+Check gantry crane E5 operational status	10
+Cancel maintenance for gantry crane E5	13
+Update container Bravo destination to Cape Town	9
+What is the status of container Z	4
+List all forklifts in New York	14
+Redirect container W to Rotterdam	9
+Cancel maintenance for forklift G7	13
+Check container Charlie at Los Angeles	2
+Book shipment of grain to Cape Town	11
+Check container Echo at Hamburg	2
+Book container BZ-12 for tomorrow	0
+Update container Foxtrot destination to Singapore	9
+Book shipment of chemicals to Rotterdam	11
+List all gantry cranes in Cape Town	14
+Update container Foxtrot destination to Hamburg	9
+Book shipment of steel rods to Hamburg	11
+Where is ship Atlantic Pride located	8
+Check status of container Juliet in London	4
+Update container Foxtrot destination to London	9
+List containers near Tokyo	3
+Schedule maintenance for crane C-14 on 15th June	6
+Book shipment of medical supplies to Dubai	11
+Query ship schedule for Atlantic Pride	7
+Schedule maintenance for straddle carrier G7 on 15th February	6
+List containers near Hamburg	3
+Schedule shipment of steel beams to Hamburg	11
+List all cranes in Los Angeles	14
+Schedule maintenance for gantry crane B2 on 12th June	6
+Where is ship Marine Falcon located	8
+List all forklifts in Singapore	14
+Cancel shipment of clothing to Singapore	12
+Check forklift D4 operational status	10
+Check container Hotel at Cape Town	2
+Cancel shipment of electronics to Hamburg	12
+Cancel shipment of food supplies to Hamburg	12
+Where is ship Marine Falcon located	8
+List all forklifts in Los Angeles	14
+Cancel shipment of furniture to Hamburg	12
+List all reach stackesr in Dubai	14
+Check container Alpha at Rotterdam	2
+Cancel shipment of medical supplies to New York	12
+Cancel container Hotel booking scheduled for 15th February	1
+Check gantry crane C3 operational status	10
+List all cranes in New York	14
+Book shipment of clothing to Dubai	11
+Cancel container Bravo booking scheduled for 3rd March	1
+List containers near Miami	3
+Cancel maintenance for reach stacker H8	13
+Book container Golf for delivery on 20th April	0
+Query ship schedule for Marine Falcon	7
+Query ship schedule for Marine Falcon	7
+Cancel container Echo booking scheduled for 25th July	1
+Cancel crane inspection in bay 3	13
+Cancel container Bravo booking scheduled for 3rd March	1
+Schedule maintenance for straddle carrier F6 on 9th October	6
+Cancel maintenance for crane C3	13
+List containers near Hamburg	3
+Cancel shipment of grain to Dubai	12
+Book shipment of steel rods to Singapore	11
+When is the next ship arriving	7
+Book shipment of grain to Rotterdam	11
+Book a shipment of electronics to London	11
+Query ship schedule for Atlantic Pride	7
+List containers near Dubai	3
+Check status of container Juliet in Cape Town	4
+Book shipment of electronics to Cape Town	11
+Check gantry crane C3 operational status	10
+Check straddle carrier A1 operational status	10
+Check status of container India in New York	4
+Check status of container Charlie in London	4
+Query ship schedule for Neptune Voyager	7
+Cancel container Alpha booking scheduled for 1st January	1
+Book shipment of medical supplies to Cape Town	11
+Cancel maintenance for gantry crane D4	13
+Update container India destination to New York	9
+Where is ship Marine Falcon located	8
+Cancel container Charlie booking scheduled for 1st January	1
+Cancel container India booking scheduled for 3rd March	1
+Check crane B2 operational status	10
+Cancel maintenance for forklift J10	13
+Check gantry crane E5 operational status	10
+List containers by location Los Angeles	5
+Where is ship Neptune Voyager located	8
+List containers by location Cape Town	5
+Check container Juliet at Singapore	2
+Cancel container Delta booking scheduled for 25th July	1
+Cancel shipment of grain to Cape Town	12
+Cancel container Charlie booking scheduled for 14th September	1
+List all reach stackers in New York	14
+Check container Echo at Los Angeles	2
+Check status of container Echo in Tokyo	4
+Check status of container Echo in Rotterdam	4
+Schedule maintenance for gantry crane C3 on 15th February	6
+Cancel container Charlie booking scheduled for 12th June	1
+Check container Charlie at Cape Town	2
+Check container Alpha at Singapore	2
+Query ship schedule for Atlantic Pride	7
+List containers near Los Angeles	3
+Query ship schedule for Ocean Queen	7
+Cancel maintenance for crane E5	13
+Cancel container Delta booking scheduled for 9th October	1
+Schedule maintenance for forklift B2 on 1st January	6
+Book shipment of grain to Tokyo	11
+Book shipment of furniture to Rotterdam	11
+Cancel maintenance for straddle carrier D4	13
+List containers near Rotterdam	3
+Cancel maintenance for forklift F6	13
+Book shipment of grain to Miami	11
+Cancel maintenance for crane B2	13
+Book shipment of grain to Los Angeles	11
+Schedule maintenance for reach stacker A1 on 20th April	6
+List all straddle carriers in Singapore	14
+Update container India destination to Rotterdam	9
+Check status of container Hotel in Miami	4
+Cancel shipment of timber to Miami	12
+Query ship schedule for Pacific Star	7
+Where is ship Marine Falcon located	8
+Cancel container Hotel booking scheduled for 30th August	1
+List containers near Dubai	3
+List all reach stackers in Singapore	14
+Book shipment of grain to New York	11
+Schedule maintenance for reach stacker G7 on 15th February	6
+List containers near London	3
+Book shipment of medical supplies to Los Angeles	11
+List containers by location Miami	5
+Query ship schedule for Sea Breeze	7
+Cancel maintenance for crane G7	13
+Schedule maintenance for straddle carrier J10 on 20th April	6
+Check status of container Golf in Singapore	4
+Book shipment of grain to Los Angeles	11
+Check status of container Alpha in Cape Town	4
+Schedule maintenance for crane H8 on 5th May	6
+Schedule maintenance for gantry crane C3 on 5th May	6
+List containers near Rotterdam	3
+List all reach stackers in Cape Town	14
+Cancel shipment of electronics to New York	12
+Where is ship Pacific Star located	8
+List containers by location Miami	5
+Where is ship Pacific Star located	8
+Book shipment of food supplies to Miami	11
+List all forklifts in New York	14
+Cancel maintenance for crane J10	13
+Cancel maintenance for crane G7	13
+Book shipment of grain to Miami	11
+List all forklifts in Dubai	14
+Book shipment of food supplies to Hamburg	11
+Cancel shipment of chemicals to Tokyo	12
+Check gantry crane J10 operational status	10
+Check gantry crane C3 operational status	10
+Book container Echo for delivery on 14th September	0
+List containers near Hamburg	3
+Check container Alpha at Miami	2
+Update container Charlie destination to Cape Town	9
+Verify forklift 12 operational status	10
+Update container Foxtrot destination to Cape Town	9
+Check container Foxtrot at Dubai	2
+Book shipment of clothing to London	11
+Cancel shipment of furniture to Singapore	12
+Cancel shipment of automobile parts to Dubai	12
+Cancel maintenance for gantry crane G7	13
+Book container Foxtrot for delivery on 9th October	0
+Check crane A1 operational status	10
+List containers near Cape Town	3
+Check reach stacker C3 operational status	10
+Where is ship Sea Breeze located	8
+Update container India destination to Hamburg	9
+Cancel shipment of furniture to Singapore	12
+List containers near Cape Town	3
+Schedule maintenance for gantry crane A1 on 20th April	6
+Schedule maintenance for reach stacker C3 on 20th April	6
+List all reach stackers in Rotterdam	14
+List containers near Tokyo	3
+List all available containers	3
+Book shipment of furniture to Dubai	11
+Cancel maintenance for straddle carrier H8	13
+Book shipment of food supplies to Dubai	11
+Update container Foxtrot destination to Tokyo	9
+Book container Bravo for delivery on 12th June	0
+Check forklift I9 operational status	10
+Query ship schedule for Pacific Star	7
+Where is ship Atlantic Pride located	8
+Verify equipment availability in section D	10
+Update the destination of container X to Berlin	9
+Check container Alpha at Cape Town	2
+Cancel container Juliet booking scheduled for 25th July	1
+Schedule maintenance for forklift in section B	6
+Cancel maintenance for forklift B2	13
+List containers near Miami	3
+Where is ship Ocean Queen located	8
+Schedule maintenance for reach stacker C3 on 30th August	6
+Check status of container India in Miami	4
+Query ship schedule for Neptune Voyager	7
+Cancel shipment of electronics to Los Angeles	12
+Schedule maintenance for reach stacker H8 on 14th September	6
+Check crane A1 operational status	10
+Where is ship Pacific Star located	8
+Cancel container Juliet booking scheduled for 9th October	1
+Book container Juliet for delivery on 20th April	0
+Where is ship Atlantic Pride located	8
+Book shipment of steel rods to London	11
+Cancel container Charlie booking scheduled for 25th July	1
+List all gantry cranes in Los Angeles	14
+Update container Delta destination to Tokyo	9
+Book container Hotel for delivery on 25th July	0
+Cancel my shipment of grain	12
+Check container Hotel at Dubai	2
+Cancel maintenance on crane C3	13
+Where is ship Atlantic Pride located	8
+Schedule maintenance for reach stacker I9 on 1st January	6
+Check container Echo at Cape Town	2
+List containers near New York	3
+Cancel forklift maintenance scheduled for today	13
+List containers by location Tokyo	5
+Check status of container Golf in London	4
+Cancel shipment of furniture to Cape Town	12
+List containers near Rotterdam	3
+Where is ship Marine Falcon located	8
+Query ship schedule for Marine Falcon	7
+List all cranes in Los Angeles	14
+Check status of container Charlie in Los Angeles	4
+Check container Golf at Tokyo	2
+Check container Hotel at London	2
+Update container Alpha destination to Hamburg	9
+Schedule maintenance for gantry crane F6 on 20th April	6
+Cancel shipment of electronics to Singapore	12
+Where is ship Pacific Star located	8
+Book container Bravo for delivery on 25th July	0
+Check crane F6 operational status	10
+Schedule maintenance for gantry crane H8 on 20th April	6
+Book container X for next Monday	0
+Cancel maintenance for straddle carrier A1	13
+Check crane F6 operational status	10
+Book container Echo for delivery on 12th June	0
+Check container Hotel at New York	2
+Check the status of crane 5	10
+Update container Hotel destination to Los Angeles	9
+Query ship schedule for Atlantic Pride	7
+Query ship schedule for Ocean Queen	7
+Schedule maintenance for forklift A1 on 3rd March	6
+Book container Foxtrot for delivery on 9th October	0
+List containers by location Tokyo	5
+Check crane E5 operational status	10
+List containers by location Tokyo	5
+List containers near Los Angeles	3
+Book a shipment of steel rods	11
+List containers by location New York	5
+Check reach stacker I9 operational status	10
+Schedule maintenance for gantry crane A1 on 20th April	6
+Check status of container Bravo in Singapore	4
+Check container Alpha at Dubai	2
+List all gantry cranes in Rotterdam	14
+Book shipment of electronics to Tokyo	11
+Where is ship Pacific Star located	8
+List all forklifts in Cape Town	14
+Where is ship Atlantic Pride located	8
+List containers near Rotterdam	3
+Check forklift E5 operational status	10
+Check crane I9 operational status	10
+Cancel shipment of steel rods to Cape Town	12
+Check container Echo at Los Angeles	2
+Cancel shipment of furniture to London	12
+Where is ship Pacific Star located	8
+Cancel shipment of steel rods to Los Angeles	12
+Update container Charlie destination to Miami	9
+Book container Bravo for delivery on 20th April	0
+Where is ship Marine Falcon located	8
+Check crane C3 operational status	10
+Cancel maintenance for gantry crane G7	13
+List containers near Rotterdam	3
+Check container ZX-99 at Los Angeles port	2
+List containers by location Hamburg	5
+Where is ship Marine Falcon located	8
+Check container Alpha at Hamburg	2
+Check status of container Juliet in Singapore	4
+Check container Echo at Dubai	2
+Schedule maintenance for gantry crane G7 on 3rd March	6
+Query ship schedule for Marine Falcon	7
+Where is ship Marine Falcon located	8
+List containers by location Hamburg	5
+List all straddle carriers in Los Angeles	14
+List containers by location Rotterdam	5
+Cancel shipment of clothing to Hamburg	12
+Cancel container Golf booking scheduled for 15th February	1
+Cancel shipment of grain to Cape Town	12
+Book container Echo for delivery on 14th September	0
+Schedule maintenance for forklift D4 on 3rd March	6
+Book container Juliet for delivery on 25th July	0
+Where is ship Ocean Queen located	8
+List containers by location London	5
+List containers near Hamburg	3
+Where is ship Atlantic Pride located	8
+Cancel container Golf booking scheduled for 14th September	1
+Book shipment of medical supplies to London	11
+Check container Bravo in warehouse A	2
+Cancel shipment of medical supplies to New York	12
+Book container Juliet for delivery on 3rd March	0
+Cancel container Alpha booking scheduled for 9th October	1
+Check status of container Echo in Tokyo	4
+Query ship schedule for Pacific Star	7
+Book container Hotel for delivery on 9th October	0

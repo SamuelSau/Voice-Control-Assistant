@@ -1,6 +1,81 @@
 sentence	label
-Track container X status	2
-When is ship Apollo arriving	7
-Cancel my crane booking	13
-Book shipment of electronics	11
-List all cranes in port A	14
+Check reach stacker G7 operational status	10
+Check forklift F6 operational status	10
+Schedule maintenance for forklift E5 on 25th July	6
+Cancel maintenance for forklift F6	13
+List all forklifts in Rotterdam	14
+Update container Charlie destination to Los Angeles	9
+Check crane E5 operational status	10
+List all cranes in Los Angeles	14
+Cancel maintenance for crane B2	13
+Set container Y's destination to New York	9
+Schedule maintenance for straddle carrier F6 on 20th April	6
+List containers by location Cape Town	5
+List containers near Tokyo	3
+List containers near Dubai	3
+Cancel shipment of furniture to Los Angeles	12
+Cancel shipment of chemicals to Singapore	12
+Update container Golf destination to Miami	9
+Cancel shipment of clothing to Hamburg	12
+Check status of container Charlie in Dubai	4
+Book shipment of grain to London	11
+Book shipment of food supplies to Singapore	11
+List containers near Tokyo	3
+Update container Charlie destination to Tokyo	9
+Check container status of QY-21 in dockyard	4
+Query ship schedule for Sea Breeze	7
+Where is ship Pacific Star located	8
+Cancel the shipment of furniture to Miami	12
+Query ship schedule for Pacific Star	7
+Where is ship Sea Breeze located	8
+List containers by location Rotterdam	5
+Cancel shipment of timber to Los Angeles	12
+Cancel container Alpha booking scheduled for 1st January	1
+Query ship schedule for Neptune Voyager	7
+Cancel maintenance for reach stacker I9	13
+Book container Hotel for delivery on 15th February	0
+Where is ship Atlantic Pride located	8
+Book container Echo for delivery on 14th September	0
+Book container Foxtrot for delivery on 9th October	0
+Check gantry crane F6 operational status	10
+Update the destination of container X	9
+Book container Delta for delivery on 9th October	0
+Check container Charlie at Hamburg	2
+Cancel maintenance for crane A1	13
+Update container Foxtrot destination to Hamburg	9
+Schedule maintenance for gantry crane F6 on 30th August	6
+List all gantry cranes in New York	14
+List all forklifts in Los Angeles	14
+Update container Bravo destination to Rotterdam	9
+Check status of container Echo in New York	4
+List containers by location Los Angeles	5
+List containers by location Hamburg	5
+List containers by location Cape Town	5
+List all reach stackers in Singapore	14
+Check status of container Echo in Rotterdam	4
+Update container Charlie destination to London	9
+Check container Foxtrot at Dubai	2
+List all forklifts in London	14
+Schedule maintenance for crane F6 on 9th October	6
+Update container Golf destination to Los Angeles	9
+List containers by location Los Angeles	5
+Check gantry crane G7 operational status	10
+Update container Delta destination to London	9
+Schedule maintenance for crane B2 on 1st January	6
+Cancel my container booking	1
+Cancel shipment of chemicals to Tokyo	12
+Cancel shipment of steel rods to Singapore	12
+List all cranes in Singapore	14
+Cancel container India booking scheduled for 5th May	1
+Cancel maintenance for straddle carrier C3	13
+Update container Juliet destination to New York	9
+Check status of container Alpha in Los Angeles	4
+Query ship location near Cape Town	8
+Schedule maintenance for straddle carrier D4 on 15th February	6
+Check status of container Foxtrot in Tokyo	4
+Cancel shipment of steel rods to Rotterdam	12
+Check container India at London	2
+List containers by location Los Angeles	5
+List containers by location Los Angeles	5
+Check status of container Hotel in London	4
+Book container Echo for delivery on 3rd March	0
