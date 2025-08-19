@@ -10,17 +10,17 @@ def main():
     db_helper = SQLiteHelper()
 
     # Transcribe speech to text
-    text = asr_client.transcribe("audio_samples/output_test.wav")
+    text = asr_client.transcribe("audio_samples/input_audio_ship.wav")
 
     #Get intent and slots from text
     pred_intents, pred_slots = nlu_client.predict_intent_slots(text)
     print(f"Intents: {pred_intents} Slots: {pred_slots}")
 
-    answer = db_helper.query_database(pred_intents, pred_slots)
+    answer = db_helper.query_database(pred_intents, pred_slots, tokens=text.split())
     print(f"DB Query Result: {answer}")
 
     # Convert text back to speech and save output WAV
-    tts_client.synthesize_and_save(text, "audio_samples/tts_output.wav")
+    tts_client.synthesize_and_save(answer, "audio_samples/tts_output.wav")
 
     db_helper.close()
 
