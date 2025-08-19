@@ -11,12 +11,12 @@ def main():
 
     # Transcribe speech to text
     text = asr_client.transcribe("audio_samples/output_test.wav")
-    
-    #Get intent and slots from text
-    intent, slots = nlu_client.predict_intent_slots(text)
-    print(f"Intent: {intent}, Slots: {slots}")
 
-    answer = db_helper.query_database(intent, slots)
+    #Get intent and slots from text
+    pred_intents, pred_slots = nlu_client.predict_intent_slots(text)
+    print(f"Intents: {pred_intents} Slots: {pred_slots}")
+
+    answer = db_helper.query_database(pred_intents, pred_slots)
     print(f"DB Query Result: {answer}")
 
     # Convert text back to speech and save output WAV

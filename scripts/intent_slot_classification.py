@@ -1,3 +1,6 @@
+import os
+import glob
+
 from lightning.pytorch import Trainer
 from omegaconf import DictConfig, OmegaConf
 
@@ -20,11 +23,13 @@ def main(cfg: DictConfig) -> None:
     # initialize the model using the config file
     model = IntentSlotClassificationModel(cfg.model, trainer=trainer)
 
+    """
     # training
     logging.info("================================================================================================")
     logging.info('Starting training...')
     trainer.fit(model)
     logging.info('Training finished!')
+    """
 
     # Stop further testing as fast_dev_run does not save checkpoints
     if trainer.fast_dev_run:
@@ -35,17 +40,22 @@ def main(cfg: DictConfig) -> None:
     logging.info("================================================================================================")
     logging.info("Starting the testing of the trained model on test set...")
     logging.info("We will load the latest model saved checkpoint from the training...")
+    ckpt_dir = os.path.join(cfg.exp_manager.exp_dir, cfg.exp_manager.name, "2025-08-19_10-50-46", "checkpoints")
+    checkpoints = sorted(glob.glob(os.path.join(ckpt_dir, "*.ckpt")), key=os.path.getmtime)
+    if not checkpoints:
+        raise FileNotFoundError(f"No checkpoints found in {ckpt_dir}")
+    checkpoint_path = checkpoints[-1]
 
     # for evaluation and inference you can load the previously trained model saved in .nemo file
     # like this in your code, but we will just reuse the trained model here
-    # eval_model = IntentSlotClassificationModel.restore_from(restore_path=checkpoint_path)
-    eval_model = model
+    eval_model = IntentSlotClassificationModel.restore_from(restore_path="./intent_slot_model.nemo")
+    #eval_model = model
 
     # we will setup testing data reusing the same config (test section)
     eval_model.update_data_dir_for_testing(data_dir=cfg.model.data_dir)
     eval_model.setup_test_data(test_data_config=cfg.model.test_ds)
 
-    trainer.test(model=eval_model, ckpt_path=None, verbose=False)
+    trainer.test(model=eval_model, ckpt_path=checkpoint_path, verbose=True)
     logging.info("Testing finished!")
 
     # run an inference on a few examples
@@ -58,6 +68,8 @@ def main(cfg: DictConfig) -> None:
         'Update container Z',
         'Book shipment of steel beams',
         'Check container X for 16th August',
+        'List containers by location Tokyo',
+        'Schedule maintenance for forklift B1 on 9th July'
     ]
 
     pred_intents, pred_slots = eval_model.predict_from_examples(queries, cfg.model.test_ds)

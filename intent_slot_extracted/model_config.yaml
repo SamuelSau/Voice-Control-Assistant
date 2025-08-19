@@ -1,0 +1,165 @@
+nemo_path: ./intent_slot_model.nemo
+data_dir: ./data
+class_labels:
+  intent_labels_file: ./intent_slot_extracted/ef64d190818c4b1ab3a70cbd225694fe_dict.intents.csv
+  slot_labels_file: ./intent_slot_extracted/0a0c8b25d243464aaa7c80f5b28e04ee_dict.slots.csv
+class_balancing: weighted_loss
+intent_loss_weight: 0.6
+pad_label: -1
+ignore_extra_tokens: false
+ignore_start_end: false
+train_ds:
+  prefix: train
+  batch_size: 16
+  shuffle: true
+  num_samples: -1
+  num_workers: 4
+  drop_last: false
+  pin_memory: true
+validation_ds:
+  prefix: val
+  batch_size: 16
+  shuffle: false
+  num_samples: -1
+  num_workers: 4
+  drop_last: false
+  pin_memory: true
+test_ds:
+  prefix: test
+  batch_size: 16
+  shuffle: false
+  num_samples: -1
+  num_workers: 4
+  drop_last: false
+  pin_memory: true
+tokenizer:
+  tokenizer_name: distilbert-base-uncased
+  vocab_file: ./intent_slot_extracted/9fcda4990fec48c7921a616928af77a5_tokenizer.vocab_file
+  tokenizer_model: null
+  special_tokens: null
+language_model:
+  max_seq_length: 64
+  pretrained_model_name: distilbert-base-uncased
+  lm_checkpoint: null
+  config_file: ./intent_slot_extracted/d6dea05716a5440993904324c1f56a0b_distilbert-base-uncased_encoder_config.json
+  config: null
+head:
+  num_output_layers: 1
+  fc_dropout: 0.1
+optim:
+  name: adam
+  lr: 2.0e-05
+  args:
+    name: auto
+    weight_decay: 0.01
+  sched:
+    name: WarmupAnnealing
+    iters_per_batch: null
+    max_steps: -1
+    monitor: val_loss
+    reduce_on_plateau: false
+    args:
+      name: auto
+      warmup_steps: null
+      warmup_ratio: 0.1
+      last_epoch: -1
+data_desc:
+  intent_labels:
+  - book_container
+  - cancel_container
+  - check_container
+  - list_containers
+  - check_container_status
+  - list_containers_by_location
+  - schedule_maintenance
+  - query_ship_schedule
+  - query_ship_location
+  - update_container_destination
+  - check_equipment_status
+  - book_shipment
+  - cancel_shipment
+  - cancel_equipment
+  - list_equipment_by_location
+  intent_label_ids:
+    book_container: 0
+    cancel_container: 1
+    check_container: 2
+    list_containers: 3
+    check_container_status: 4
+    list_containers_by_location: 5
+    schedule_maintenance: 6
+    query_ship_schedule: 7
+    query_ship_location: 8
+    update_container_destination: 9
+    check_equipment_status: 10
+    book_shipment: 11
+    cancel_shipment: 12
+    cancel_equipment: 13
+    list_equipment_by_location: 14
+  intent_weights:
+  - 1.0406504065040652
+  - 0.9481481481481482
+  - 0.9078014184397163
+  - 1.0666666666666667
+  - 1.0158730158730158
+  - 0.9922480620155039
+  - 1.0666666666666667
+  - 0.9481481481481482
+  - 0.9481481481481482
+  - 1.0940170940170941
+  - 0.9481481481481482
+  - 0.927536231884058
+  - 1.0406504065040652
+  - 0.9922480620155039
+  - 1.1228070175438596
+  slot_labels:
+  - B-date
+  - I-date
+  - B-container_name
+  - I-container_name
+  - B-location
+  - I-location
+  - B-equipment_type
+  - I-equipment_type
+  - B-equipment_id
+  - I-equipment_id
+  - B-ship_name
+  - I-ship_name
+  - B-cargo_type
+  - I-cargo_type
+  - O
+  slot_label_ids:
+    B-date: 0
+    I-date: 1
+    B-container_name: 2
+    I-container_name: 3
+    B-location: 4
+    I-location: 5
+    B-equipment_type: 6
+    I-equipment_type: 7
+    B-equipment_id: 8
+    I-equipment_id: 9
+    B-ship_name: 10
+    I-ship_name: 11
+    B-cargo_type: 12
+    I-cargo_type: 13
+    O: 14
+  slot_weights:
+  - 2.2589285714285716
+  - 2.4297719087635055
+  - 1.3638814016172507
+  - 1.0
+  - 0.8896703296703297
+  - 2.536340852130326
+  - 1.8534798534798536
+  - 3.569664902998236
+  - 2.9808541973490428
+  - 6.724252491694352
+  - 3.1773940345368916
+  - 3.248796147672552
+  - 3.9073359073359075
+  - 9.327188940092165
+  - 0.11621497473587505
+  pad_label: 14
+target: nemo.collections.nlp.models.intent_slot_classification.intent_slot_classification_model.IntentSlotClassificationModel
+nemo_version: 2.4.0
