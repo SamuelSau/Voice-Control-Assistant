@@ -6,6 +6,17 @@ Project uses Nvidia RIVA with pretrained models for a full pipeline from ASR, NL
 
 I wanted to build an voice assistant to see if it could retrieve information from a database easily. I thought there was not many good solutions that provided a lot of the tooling that could be done out-of-the-box without doing a lot of configuration and experimentation. Essentially RIVA quick_start provides the ASR and TTS deployed models out-of-the-box, but did not have the NLP/NLU model that was useful for my case, so I decided to train my own.
 
+## How this project works/runs
+
+1. Add a .wav file within audio_samples/ (ensure that sample rate is 16,000)
+2. Run ./riva_init.sh (if first time), and ./riva_start.sh with ./riva_start_client.sh
+3. Run main.py from project root
+4. A file named "tts_output.wav" will appear in audio_samples/ as the response to the entire pipeline (asr->nlp->tts)
+5. (to modify data), apply changes within dict.intents.csv, dict.slots.csv, train.tsv, train_slots.tsv, etc...
+6. (to modify database), apply changes to db_helper.py or populate_data.py (remember to remove assisstant.db since direct table modifications won't work)
+7. **you might need riva-speech** to run those models, so grab container with `docker pull nvcr.io/nvidia/riva/riva-speech:2.19.0`
+8. remember to have auth when you set the api key for `ngc config set` for downloading any containers/models from Nvidia
+
 ## Design choices
 
 Since I had extracted the pretrained distilbert-uncased and the vocab lists from [SLU Conformer-Transformer-Large SLURP](https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/slu_conformer_transformer_large_slurp), I believed that was enough as a baseline to train on. The configs yaml essentially contained the rest for the architecture and training of the model to generate the .nemo file.
@@ -47,4 +58,5 @@ Looking back, I might want to experiment by injecting more training examples and
 
 ### Links for the NGC models used
 - https://docs.nvidia.com/tao/tao-toolkit-archive/tao-30-2202/text/nlp/intent_and_slot.html
+
 
